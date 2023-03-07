@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&family=Raleway:wght@300;500&display=swap');/* webfont load */
+
+/* material-icons */
+
+
+/* all Use Part */
+
+@import url("reset.css");
+@import url("jquery.bxslider.css");
+@import url("../css/global.css");
+@import url("../css/page.css");
+/* @import url("../css_teacher/global.css");
+@import url("../css_teacher/page.css"); */

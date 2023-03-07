@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div id="cartPanel">
+        <div>
+            <h2>Shopping Cart</h2>
+            <input type="button" class="btn_close" value="close Button">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/cartProduct_01.png" alt="cartProduct">
+                        <figcaption>
+                            <h3>Leather Phone Pouch</h3>
+                            <dl>
+                                <dt>size</dt>
+                                <dd>no size</dd>
+                                <dt>color</dt>
+                                <dd>black</dd>
+                                <dt>order</dt>
+                                <dd>one</dd>
+                                <dt>Quantity</dt>
+                                <dd>79,000</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <dl>
+                <dt>Total Product amount</dt>
+                <dd>79,000</dd>
+                <dt>Shipping Free</dt>
+                <dd>0</dd>
+                <dt>TOTAL AMOUNT DUE</dt>
+                <dd>79,000</dd>
+            </dl>
+            <a href="cos_order.html">PLACE AN ORDER</a>
+            <a href="cartView.html">View in shopping cart &gt;</a>
+            <p class="emptyComment">Your cart is empty</p>
+        </div>
+    </div>
+    <div id="searchPanel">
+        <input type="button" class="btn_close" value="close Button">
+        <input type="search" placeholder="Please enter your search term"
+            title="Please enter your search term">
+    </div>
+
+    <header class="blackTheme">
+        <ul class="rollingBanner">
+            <li>Timeless design regardless of the season.</li>
+            <li>Timeless design made from sustainable, high-quality materials.</li>
+        </ul>
+        <div>
+            <h1>
+                <a href="index.html">
+                    COS
+                </a>
+            </h1>
+            <div class="gnbContainer" id="gnbPanel">
+                <ul>
+                    <li>
+                        Women
+                        <ol>
+                            <li>
+                                <a href="w_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="w_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="w_dresses.html">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="w_trousers.html">Trousers &amp; Skirts</a>
+                            </li>
+                            <li>
+                                <a href="w_shoesBag.html">Shoes &amp; Bags</a>
+                            </li>
+                            <li>
+                                <a href="w_accessories.html">Accessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Men
+                        <ol>
+                            <li>
+                                <a href="m_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="m_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="m_trousers.html">Trousers</a>
+                            </li>
+                            <li>
+                                <a href="m_shoes.html">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="m_accessories.html">Aceessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Magazine
+                        <ol>
+                            <li>
+                                <a href="cos_place.html">Place</a>
+                            </li>
+                            <li>
+                                <a href="cos_stories.html">Stories</a>
+                            </li>
+                            <li>
+                                <a href="cos_fashionWeek.html">Autum &amp; Winter 2021</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Sustainability
+                        <ol>
+                            <li>
+                                <a href="cos_ourMission.html">OUR Mission</a>
+                            </li>
+                            <li>
+                                <a href="productCare.html">Product care</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <input type="button" class="btn_close" value="closeButton">
+                <div class="mui bottomBox">
+                    <a href="login.html">ACCOUNT LOGIN</a>
+                    <a href="customerInquirie.html">CUSTOMER INQUIRIES</a>
+                </div>
+            </div>
+            <div class="sideContainer">
+                <input type="button" value="search" data-Panel="searchPanel">
+                <input type="button" value="cart" data-Panel="cartPanel">
+                <a href="login.html">myCOS</a>
+                <input type="button" value="gnbOpen" class="mui" data-Panel="gnbPanel">
+            </div>
+        </div>
+    </header>
+
+    <section class="placeContainerC">
+        <h2>PLACES</h2>
+        <div>
+            <h3>Athens Street View</h3>
+            <ul class="athensImgSlider">
+                <li class="slide1">
+                    <figure>
+                        <img src="images/COSplaceAthens01.png" alt="athensImgSlider01">
+                        <figcaption>
+                            <p>
+                                One of the oldest cities in the world, Athens has a well-preserved historical
+                                record. In the eyes of Chris Kontos, founder of Kennedy Magazine,
+                                which publishes a bi-annual journal on the 'newthings', Athens is always a city full of novelty.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide2">
+                    <figure>
+                        <img src="images/COSplaceAthens02.png" alt="athensImgSlider02">
+                        <figcaption>
+                            <p>
+                                One of the oldest cities in the world, Athens has a well-preserved historical
+                                record. In the eyes of Chris Kontos, founder of Kennedy Magazine,
+                                which publishes a bi-annual journal on the 'newthings', Athens is always a city full of novelty.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide3">
+                    <figure>
+                        <img src="images/COSplaceAthens03.png" alt="athensImgSlider03">
+                        <figcaption>
+                            <p>
+                                One of the oldest cities in the world, Athens has a well-preserved historical
+                                record. In the eyes of Chris Kontos, founder of Kennedy Magazine,
+                                which publishes a bi-annual journal on the 'newthings', Athens is always a city full of novelty.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <span>
+                'In the heart of Athens there is a large central market, <br>
+                small shops and shops selling imported goods.'
+            </span>
+            <p>
+                ' Athens is a city where East and West, old and new, order and chaos are mixed.' The image and feel
+                of a beautiful city that people usually think of may be different,
+                but it is a city with a special charm. Athens is like the scent of orange blossom before Easter, and
+                it's like an outdoor cinema. Besides,
+                it is a city with a beautiful waterfr ont and a magnificent Acropolis Athens is most beautiful when
+                dawn illuminates the empty streets.
+            </p>
+            <p>
+                'I was born in Piraeus, a port city in Athens that is not well known to people. Over the years, I
+                have come to realize that my hometown and the experiences
+                I grew up with have been instrumental in developing my identity and creativity. Contrary to the
+                imagination of people who think they will love and hate their homeland.
+                After staying in Athens for too long, the shortcomings are visible, but as an editor and
+                photographer, I travel a lot and I feel welcome when I return to Athens.'
+            </p>
+            <p>
+                <strong>MY CITY</strong>
+                'I consider myself lucky to be able to live in my favorite center of Athens. It's nice to have
+                everything you need nearby.
+                For example, morning coffee, going to buy necessities, or getting together with friends for a glass
+                of wine in the evening.
+                It is also attractive that you can enjoy the culture nearby and meet various people through short
+                conversations.
+                The center of Athens has a large central market, small shops and shops selling imported goods.
+                And it's nice to be able to get to all the places of Athens on foot without having to use a car or
+                public transport.
+                Omonoia in Athens may look outdated, but if you look through the streets, there are many things to
+                see,
+                so be sure to visit the town of Plaka under the Acropolis.'
+            </p>
+            <p>
+                'Athens has developed a lot in recent years and I think it's the most interesting city.' The
+                cultural and artistic world is also growing,
+                and the quality of work is also improving.
+                My favorite restaurant called Seychelles is located around the Kerameikos square, the ancient
+                cemetery in Athens.
+                I really like everything on the seasonal menu, but my favorite is pasta with buffalo meat and sour
+                cheese.
+                Browse your favorite records at the Monastiraki flea market while enjoying delicious coffee and
+                traditional Greek food Tyripita,
+                have lunch at the Diporto taverna, and in the evening with friends under the Acropolis.
+                A glass of wine would make a perfect day in Athens.'
+            </p>
+        </div>
+        <div class="limgRtxt">
+            <img src="images/COSplaceAthens04.png" alt="athensImgSlider04">
+            <div>
+                <p>
+                    <strong>ON ATHENS' EVOLUTION</strong>
+                    'I think that the explosive growth of the tourism industry is the other side of Athens.
+                    It's a pity to see hotels appearing on every street you pass and the unique neighborhoods
+                    becoming uniform due to the phenomenon of gentrification. It's difficult to strike a balance between
+                    identity and growth,
+                    but I don't want Athens to be like any other city in the world. It's a really serious problem to see the
+                    same shops
+                    and restaurants wherever you go.'
+                </p>
+                <p>
+                    <strong>MY PROCESS</strong>
+                    'I have a lot of curiosity, so I always have a camera in my hand to take pictures.
+                    The creative part of our daily life seems to be inseparable and I think it is a part of life.
+                    I wanted to create an image that could elicit certain emotions.
+                    It was amazing how images convey the artist's message in the most direct and truthful way.
+                    Whether writing or taking pictures, I always really want to work.'
+                </p>
+                <p>
+                    'I love collecting images online, so I have thousands of images on my hard drive.
+                    I think appreciating images is a big inspiration to me, and I think this habit has a big impact
+                    on my aesthetics. Inspired by the films of Edward Young, Tsai Ming-liang and Wong Kar-wai,
+                    it has changed the way we see the world. Among photographers, I especially like Joel Meyrowitz,
+                    Takashi Honma and Tina Barney.'
+                </p>
+                <p>
+                    'When I started taking pictures as a child, I was greatly influenced by Wong Kar-wai'
+                    cinematographer Christopher Doyle, so I traveled around the city to develop my dream of photography.
+                    I've always been fascinated by the lights of Athens,
+                    so I did a fashion photo shoot in the evening for the Pakistani, Indian and Bangladeshi community.'
+                </p>
+                <p>
+                    COS AthensThe dot opens in the spring. Come and check out our latest collection of COS.
+                </p>    
+            </div>            
+        </div>
+    </section>
+
+
+    <footer>
+        <div>
+            <a href="findStore.html">FIND A STORE</a>
+            <ul>
+                <li><a href="customerInquirie.html">CUSTOMER INQUIRIES</a></li>
+                <li><a href="returnRefund.html">RETURN AND REFUND</a></li>
+                <li><a href="paymentInformation.html">PAYMENT INFORMATION</a></li>
+                <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+                <li><a href="termsOfuse.html">TERMS OF USE</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="mui">COMPANY INFORMATION</h3>
+            <p>
+                Hyundai Department Store Co., Ltd. CEO : Kim Hyung-jong and 2 others 12, Teheran-ro 98-gill, Gangnam-gu,
+                Seoul / Business registration number: 211-87-21455 [Check bussiness information] /
+                Mail-order business report:2010-Seoul Gangnam-01882 / Person in charge of personal information
+                management and youth protection: Geun-hyeok jang in charge of member operation and managment /
+                Website/App inquiry:customerservice.kr@cosstore.com / Customer Center: 1800-2765 / Hosting service:
+                Hyundai Department Store / For safe transactions, we have signed a debt payment
+                guarantee contract with Woori Bank to ensure safe transactions when paying in cash. Confirmation of
+                service subscription
+            </p>
+            <div>
+                <p>CopyrightⓒHyundai Department Store. All rights reserved.</p>
+                <ul>
+                    <li><a href="https://www.kakaocorp.com">kakao</a></li>
+                    <li><a href="https://www.pinterest.co.kr/">pinterest</a></li>
+                    <li><a href="https://ko-kr.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.spotify.com/kr-ko/">spotify</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

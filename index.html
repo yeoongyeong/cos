@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartPanel">
+        <div>
+            <h2>Shopping Cart</h2>
+            <input type="button" class="btn_close" value="closeButton">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/cartProduct_01.png" alt="cartProduct">
+                        <figcaption>
+                            <h3>Leather Phone Pouch</h3>
+                            <dl>
+                                <dt>size</dt>
+                                <dd>no size</dd>
+                                <dt>color</dt>
+                                <dd>black</dd>
+                                <dt>order</dt>
+                                <dd>one</dd>
+                                <dt>Quantity</dt>
+                                <dd>79,000</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>                
+            </ul>
+            <dl>
+                <dt>Total Product amount</dt>
+                <dd>79,000</dd>                
+                <dt>Shipping Free</dt>
+                <dd>0</dd>
+                <dt>TOTAL AMOUNT DUE</dt>
+                <dd>79,000</dd>
+            </dl>
+            <a href="cos_order.html" class="btn_order">PLACE AN ORDER</a>
+            <a href="cartView.html">View in shopping cart &gt;</a>
+            <p class="emptyComment">Your cart is empty</p>
+        </div>
+    </div>
+    <div id="searchPanel">
+        <input type="button" class="btn_close" value="closeButton">
+        <input type="search" placeholder="Please enter your search term" title="Please enter your search term">
+    </div>    
+
+    <header class="active">
+        <ul class="rollingBanner">
+            <li class="active">Timeless design regardless of the season.</li>
+            <li>Timeless design made from sustainable, high-quality materials.</li>
+        </ul>
+        <div class="whiteTheme">
+            <h1>
+                <a href="index.html">
+                    COS
+                </a>
+            </h1>
+            <div class="gnbContainer" id="gnbPanel">
+                <ul>
+                    <li>
+                        Women
+                        <ol>
+                            <li>
+                                <a href="w_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="w_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="w_dresses.html">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="w_trousers.html">Trousers &amp; Skirts</a>
+                            </li>
+                            <li>
+                                <a href="w_shoesBag.html">Shoes &amp; Bags</a>
+                            </li>
+                            <li>
+                                <a href="w_accessories.html">Accessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Men
+                        <ol>
+                            <li>
+                                <a href="m_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="m_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="m_trousers.html">Trousers</a>
+                            </li>
+                            <li>
+                                <a href="m_shoes.html">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="m_accessories.html">Aceessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Magazine
+                        <ol>
+                            <li>
+                                <a href="cos_place.html">Place</a>
+                            </li>
+                            <li>
+                                <a href="cos_stories.html">Stories</a>
+                            </li>
+                            <li>
+                                <a href="cos_fashionWeek.html">Autum &amp; Winter 2021</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Sustainability
+                        <ol>
+                            <li>
+                                <a href="cos_ourMission.html">OUR Mission</a>
+                            </li>
+                            <li>
+                                <a href="productCare.html">Product care</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <input type="button" class="btn_close" value="closeButton">
+                <div class="mui bottomBox">
+                    <a href="login.html">ACCOUNT LOGIN</a>
+                    <a href="customerInquirie.html">CUSTOMER INQUIRIES</a>
+                </div>
+            </div>
+            <div class="sideContainer">
+                <input type="button" value="search" data-Panel="searchPanel">
+                <input type="button" value="cart" data-Panel="cartPanel">
+                <a href="login.html">myCOS</a>
+                <input type="button" value="gnbOpen" class="mui" data-Panel="gnbPanel">
+            </div>
+        </div>
+    </header>    
+
+    <section class="videoContainer">    
+        <h2>STYLE FOR THE NEW WINTER SEASON</h2>
+        <video controls autoplay loop muted>
+            <source src="mp4/media.io_0ec2c036be484fb1b3add364b66029c8.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <ul class="shopContainer">
+        <li>
+            <h2>WINTER COLLECTION FOR WOMEN</h2>  
+            <a href="w_outerwear.html" class="btn_more">SHOP NEW PRODUCTS &gt;</a>
+        </li>
+        <li>
+            <h2>WINTER COLLECTION FOR MEN</h2>       
+            <a href="m_outerwear.html" class="btn_more">SHOP NEW PRODUCTS &gt;</a>
+        </li>
+    </ul>
+
+    <section class="textureContainer">
+        <ul class="textureSlider">
+            <li class="slide1">
+                <figure>
+                    <img src="images/sample_slider01.png" alt="linen">
+                    <figcaption>
+                        <h3>ADVANTAGES OF LINNEN</h3>
+                        <p>Linen is a natural material made from flax fibers.
+                            Long fibers with good elasticity maintain their shape
+                            for a long time without lint. The strands are thicker
+                            than cotton, creating a unique texture unique to linen.
+                            It's breathable and lightweight, so you can wear it right over your skin. It dries quickly and is comfortable,
+                            especially suitable for travel and summer.
+                        </p>
+                        <a href="productCare_linnen.html">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide2">                    
+                <figure>
+                    <img src="images/sample_slider02.png" alt="denim">
+                    <figcaption>
+                        <h3>ADVANTAGES OF DENIM</h3>
+                        <p>Denim is made from a denim material with a very strong twill weave construction. Denim is mostly made from cotton,
+                            which is 100% shaved and sometimes blended to give it elasticity. Originating from work clothes in the 17th century,
+                            today it is a classic yet durable garment that has become the basis for many styles.
+                        </p>
+                        <a href="productCare_denim.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide3">
+                <figure>
+                    <img src="images/sample_slider03.png" alt="cotton">
+                    <figcaption>
+                        <h3>ADVANTAGES OF COTTON</h3>
+                        <p>Cotton is a natural fiber made from cotton attached to cottonseeds, and can be made in anything from soft jersey to crisp poplin.
+                            Cotton is comfortable to wear in any shape.
+                            It is breathable and can be worn against the skin.
+                            Cotton has the property of conducting and dissipating heat, allowing it to maintain an optimum temperature.
+                        </p>
+                        <a href="productCare_cotton.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide4">
+                <figure>
+                    <img src="images/sample_slider04.png" alt="silk">
+                    <figcaption>
+                        <h3>ADVANTAGES OF SLIK</h3>
+                        <p>Silk's luster comes from its prism-like protein structures that reflect light. Threads made from low-density
+                            fibers are naturally lightweight and breathable,
+                            allowing them to be worn against the skin.
+                            Silk fabrics are mostly sky and delicate,
+                            but surprisinglydurable, wear-resistant and hold their shape well. Its thermal insulator properties keep it cool in summer and warm in winter.
+                        </p>
+                        <a href="productCare_silk.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide5">
+                <figure>
+                    <img src="images/sample_slider05.png" alt="leather">
+                    <figcaption>
+                        <h3>ADVANTAGES OF LEATHER</h3>
+                        <p>An elastic and stretchy material
+                            made by tanning leather softly and flat.
+                            It can be made into various shapes, such as a buttery soft texture or a tough and durable texture. It is naturally durable and does not damage easily,
+                            but the softer the leather,
+                            the more likely it will be scratched the more you wear it. The longer you use it, the more subtle it gets and the more unique it gets.
+                        </p>
+                        <a href="productCare_leather.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide6">
+                <figure>
+                    <img src="images/sample_slider06.png" alt="jewelry">
+                    <figcaption>
+                        <h3>ADVANTAGES OF JEWELRY</h3>
+                        <p>Jewelry such as gold and silver can be worn for a long time if well cared for, and they are durable and do not corrode easily.</p>
+                        <a href="productCare_jewelry.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide7">
+                <figure>
+                    <img src="images/sample_slider07.png" alt="wool">
+                    <figcaption>
+                        <h3>ADVANTAGES OF WOOL</h3>
+                        <p>Wool is a fiber made from animal hair and is mainly
+                            used in sheep. The dense, soft threads create a natural barrier to block the wind and are somewhat waterproof. The warm and insulating properties of wool make it suitable for making knitwear. Small air pockets created by a pleated textile construction increase breathability and help regulate body temperature without being too cold or too hot. The zig-zag construction is stretchy
+                            and naturally elastic, so the garment recovers well to its original shape.
+                        </p>
+                        <a href="productCare_wool.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide8">
+                <figure>
+                    <img src="images/sample_slider08.png" alt="cashmere">
+                    <figcaption>
+                        <h3>ADVANTAGES OF CASHMERE</h3>
+                        <p>Cashmere is made from goat hair from the Mongolian highlands that insulates in two layers. For centuries,
+                            it has been practiced in the warm season by combing soft fur and then making it into thread. It is one of the rare hollow fibers that is lightweight and comfortable. The tactile yarn is very soft and light, and is elastic due to the unique wavy shape of the fine strands.
+                        </p>
+                        <a href="productCare_cashmere.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slide9">
+                <figure>
+                    <img src="images/sample_slider09.png" alt="merino">
+                    <figcaption>
+                        <h3>MERINO ADVANTAGES</h3>
+                        <p>Merino is a wool material made from a very ancient breed called Merino sheep, and the coat is made to withstand the harsh winters and warm summers.
+                            he fibers have a wavy structure that keeps the shape
+                            of the garment while being elastic. The fine fibers are soft and breathable, so you can wear them directly against your skin. Lighter than other wools,
+                            yet strong and warm.
+                        </p>
+                        <a href="productCare_merino.html" class="btn_more">THERE'S MORE TO EXPLORE &gt;</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>    
+    </section>
+    
+    <section class="productContainer">
+        <h2>AUTUMN WINTER 2021</h2>
+        <p>COS AT FASHION WEEK</p>
+        <ul class="tickerSlider">
+            <li>
+                <figure>
+                    <img src="images/Sample_product01.png" alt="productEX" data-imgnumb="Sample_product01">
+                    <figcaption>
+                        <dl>
+                            <dt>Teddy Coat</dt>
+                            <dd>￦450,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product02.png" alt="productEX" data-imgnumb="Sample_product02">
+                    <figcaption>
+                        <dl>
+                            <dt>Short Puffer Jacket</dt>
+                            <dd>￦335,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product03.png" alt="productEX" data-imgnumb="Sample_product03">
+                    <figcaption>
+                        <dl>
+                            <dt>Cropped Teddy Bomber Jacket</dt>
+                            <dd>￦150,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product04.png" alt="productEX" data-imgnumb="Sample_product04">
+                    <figcaption>
+                        <dl>
+                            <dt>Knitted Zip-Up Gilet</dt>
+                            <dd>￦115,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product05.png" alt="productEX" data-imgNumb="Sample_product05">
+                    <figcaption>
+                        <dl>
+                            <dt>Short Puffer Jacket</dt>
+                            <dd>￦335,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product06.png" alt="productEX" data-imgNumb="Sample_product06">
+                    <figcaption>
+                        <dl>
+                            <dt>Padded Vest</dt>
+                            <dd>￦135,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product07.png" alt="productEX" data-imgNumb="Sample_product07">
+                    <figcaption>
+                        <dl>
+                            <dt>Knitted Zip-Up Gilet</dt>
+                            <dd>￦115,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product08.png" alt="productEX" data-imgNumb="Sample_product08">
+                    <figcaption>
+                        <dl>
+                            <dt>Alpaca Wool Mix Oversized Cardigan</dt>
+                            <dd>￦150,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product09.png" alt="productEX" data-imgNumb="Sample_product09">
+                    <figcaption>
+                        <dl>
+                            <dt>Long Line Knitted Dress</dt>
+                            <dd>￦175,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product10.png" alt="productEX" data-imgNumb="Sample_product10">
+                    <figcaption>
+                        <dl>
+                            <dt>Oversized Fit Teddy Sweatshirt</dt>
+                            <dd>￦105,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product11.png" alt="productEX" data-imgNumb="Sample_product11">
+                    <figcaption>
+                        <dl>
+                            <dt>Oversized Wool Hoodie</dt>
+                            <dd>￦135,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Sample_product12.png" alt="productEX" data-imgNumb="Sample_product12">
+                    <figcaption>
+                        <dl>
+                            <dt>Relaxed Fit Corduroy Overshirt</dt>
+                            <dd>￦150,000</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>        
+        </ul>       
+    </section>
+
+    <ul class="magazineContainer">
+        <li>
+            <h2>PLACES</h2>
+            <a href="cos_place.html" class="btn_more">SEE MORE &gt;</a>
+        </li>
+        <li>
+            <h2>STORIES</h2>
+            <a href="cos_stories.html" class="btn_more">SEE MORE &gt;</a>
+        </li>
+        <li>
+            <h2>CAN YOU SEE THE FUTURE?</h2>
+            <a href="cos_ourMission.html" class="btn_more">SEE MORE &gt;</a>
+        </li>
+    </ul> 
+
+    <footer>
+        <div>
+            <a href="findStore.html">FIND A STORE</a>
+            <ul>
+                <li><a href="customerInquirie.html">CUSTOMER INQUIRIES</a></li>
+                <li><a href="returnRefund.html">RETURN AND REFUND</a></li>
+                <li><a href="paymentInformation.html">PAYMENT INFORMATION</a></li>
+                <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+                <li><a href="termsOfuse.html">TERMS OF USE</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="mui">COMPANY INFORMATION</h3>
+            <p>
+                Hyundai Department Store Co., Ltd. CEO : Kim Hyung-jong and 2 others 12, Teheran-ro 98-gill, Gangnam-gu, Seoul / Business registration number: 211-87-21455 [Check bussiness information] / 
+                Mail-order business report:2010-Seoul Gangnam-01882 / Person in charge of personal information management and youth protection: Geun-hyeok jang in charge of member operation and managment /
+                Website/App inquiry:customerservice.kr@cosstore.com / Customer Center: 1800-2765 / Hosting service: Hyundai Department Store / For safe transactions, we have signed a debt payment 
+                guarantee contract with Woori Bank to ensure safe transactions when paying in cash. Confirmation of service subscription
+            </p>
+            <div>
+                <p>CopyrightⓒHyundai Department Store. <br> All rights reserved.</p> 
+                <ul>
+                    <li><a href="https://www.kakaocorp.com">kakao</a></li>
+                    <li><a href="https://www.pinterest.co.kr/">pinterest</a></li>
+                    <li><a href="https://ko-kr.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.spotify.com/kr-ko/">spotify</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

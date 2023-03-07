@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div id="cartPanel">
+        <div>
+            <h2>Shopping Cart</h2>
+            <input type="button" class="btn_close" value="close Button">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/cartProduct_01.png" alt="cartProduct">
+                        <figcaption>
+                            <h3>Leather Phone Pouch</h3>
+                            <dl>
+                                <dt>size</dt>
+                                <dd>no size</dd>
+                                <dt>color</dt>
+                                <dd>black</dd>
+                                <dt>order</dt>
+                                <dd>one</dd>
+                                <dt>Quantity</dt>
+                                <dd>79,000</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <dl>
+                <dt>Total Product amount</dt>
+                <dd>79,000</dd>
+                <dt>Shipping Free</dt>
+                <dd>0</dd>
+                <dt>TOTAL AMOUNT DUE</dt>
+                <dd>79,000</dd>
+            </dl>
+            <a href="cos_order.html">PLACE AN ORDER</a>
+            <a href="cartView.html">View in shopping cart &gt;</a>
+            <p class="emptyComment">Your cart is empty</p>
+        </div>
+    </div>
+    <div id="searchPanel">
+        <input type="button" class="btn_close" value="close Button">
+        <input type="search" placeholder="Please enter your search term"
+            title="Please enter your search term">
+    </div>
+
+    <header class="blackTheme">
+        <ul class="rollingBanner">
+            <li>Timeless design regardless of the season.</li>
+            <li>Timeless design made from sustainable, high-quality materials.</li>
+        </ul>
+        <div>
+            <h1>
+                <a href="index.html">
+                    COS
+                </a>
+            </h1>
+            <div class="gnbContainer" id="gnbPanel">
+                <ul>
+                    <li>
+                        Women
+                        <ol>
+                            <li>
+                                <a href="w_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="w_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="w_dresses.html">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="w_trousers.html">Trousers &amp; Skirts</a>
+                            </li>
+                            <li>
+                                <a href="w_shoesBag.html">Shoes &amp; Bags</a>
+                            </li>
+                            <li>
+                                <a href="w_accessories.html">Accessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Men
+                        <ol>
+                            <li>
+                                <a href="m_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="m_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="m_trousers.html">Trousers</a>
+                            </li>
+                            <li>
+                                <a href="m_shoes.html">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="m_accessories.html">Aceessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Magazine
+                        <ol>
+                            <li>
+                                <a href="cos_place.html">Place</a>
+                            </li>
+                            <li>
+                                <a href="cos_stories.html">Stories</a>
+                            </li>
+                            <li>
+                                <a href="cos_fashionWeek.html">Autum &amp; Winter 2021</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Sustainability
+                        <ol>
+                            <li>
+                                <a href="cos_ourMission.html">OUR Mission</a>
+                            </li>
+                            <li>
+                                <a href="productCare.html">Product care</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <input type="button" class="btn_close" value="closeButton">
+                <div class="mui bottomBox">
+                    <a href="login.html">ACCOUNT LOGIN</a>
+                    <a href="customerInquirie.html">CUSTOMER INQUIRIES</a>
+                </div>
+            </div>
+            <div class="sideContainer">
+                <input type="button" value="search" data-Panel="searchPanel">
+                <input type="button" value="cart" data-Panel="cartPanel">
+                <a href="login.html">myCOS</a>
+                <input type="button" value="gnbOpen" class="mui" data-Panel="gnbPanel">
+            </div>
+        </div>
+    </header>
+
+    <section class="orderContainer">
+        <h2>AN ORDER SHEET</h2>
+        <strong>Order product</strong>
+        <div>
+            <ul>
+                <li>
+                    <span>Products</span>
+                    <span>Products Info</span>
+                    <span>Quantity</span>
+                    <span>Size</span>
+                    <span>Color</span>
+                    <span>price</span>
+                </li>
+                <li>
+                    <span><img src="images/COS_orderList01.png" alt="orderProductList01"></span>
+                    <span>Teddy Coat</span>
+                    <span>One</span>
+                    <span>32</span>
+                    <span>WHITE</span>
+                    <span>450,000</span>
+                    <input type="button" class="btn_close" value="closeButton">
+                </li>
+                <li>
+                    <span><img src="images/COS_orderList02.png" alt="orderProductList02"></span>
+                    <span>Short Puffer Jacket</span>
+                    <span>One</span>
+                    <span>L</span>
+                    <span>BLACK</span>
+                    <span>335,000</span>
+                    <input type="button" class="btn_close" value="closeButton">
+                </li>
+            </ul>
+        </div>
+        <div>
+            <span>
+                TOTAL PROUCT AMOUNT
+                <small>785,000</small>
+            </span>
+            <span>
+                DELIVERY FREE
+                <small>0</small>
+            </span>
+            <span>
+                TOTAL AMOUNT DUE
+                <small>785,000</small>
+            </span>
+        </div>
+        <form>
+            <fieldset>
+                <legend>1. Ordering customer information</legend>
+                <ul>
+                    <li>
+                        <input type="text" id="userName" value="ChoYeonGee" readonly title="userName">
+                    </li>
+                    <li>
+                        <input type="tel" id="userPhoneNumber" value="010-1234-5678" readonly title="userPhoneNumber">
+                    </li>
+                    <li>
+                        <input type="email" id="userEmail" value="yg0000@co.com" readonly title="userEmail">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>2. Shipping adress information</legend>
+                <ul>
+                    <li>
+                        <label for="userName">Name</label>
+                        <input type="text" id="userName" placeholder="ChoYeonGyeong">
+                        <small>Input your name, please</small>
+                    </li>
+                    <li>
+                        <label for="userAddress">Address</label>
+                        <input type="text" id="userAddress" placeholder="yeoksam-dong, 690">
+                    </li>
+                    <li>
+                        <label for="userPhoneNumber">Phone Number</label>
+                        <input type="text" id="userPhoneNumber" placeholder="010-9999-8888">
+                        <small>Please enter your mobile phone number</small>
+                    </li>
+                    <li>
+                        <label for="userMessage">Delivery Message</label>
+                        <input type="text" id="userMessage" placeholder="Please leave it at the door when absent">
+                    </li>
+                </ul>
+                <input type="submit" id="check" value="Check" readonly>
+            </fieldset>
+            <fieldset>
+                <legend>3. Payment</legend>
+                <div>
+                    <input type="radio" id="cardCheck" name="surveyGroup">
+                    <label for="cardCheck">Paying Credit Card</label>
+                    <ul>
+                        <li>
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="0123 4567 8910 1112">
+                        </li>
+                        <li>
+                            <label for="validity">Validity</label>
+                            <input type="text" id="validity" placeholder="MM/YY">
+                        </li>
+                        <li>
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" placeholder="1**">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="radio" id="cashCheck" name="surveyGroup">
+                    <label for="cashCheck">Cash Payment</label>
+                    <div>
+                        <ul>
+                            <li>
+                                <label for="userName">Cardholder Name</label>
+                                <input type="text" id="userName" placeholder="Kim YeonGee">
+                            </li>
+                            <li>
+                                <label for="bankName">Bank Name</label>
+                                <input type="text" id="bankName" placeholder="woori bank">
+                            </li>
+                        </ul>
+                        <ol>
+                            <li>
+                                Deposit information without bankbook is displayed at the time of payment.
+                            </li>
+                            <li>
+                                The bankbook deposit account number is automatically sent to the
+                                orderer's mobile phone number and e-mail immediately
+                                after receiving the order.
+                            </li>
+                        </ol>
+                        <h3>Application for issuance of cash receipt</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" id="noApplication" name="surveyGroup">
+                                <label for="noApplication"> No application</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="individual" class="selectButton" name="surveyGroup">
+                                <label for="individual">for income deduction</label>
+                                <div>
+                                    <label for="individualNumber">Phone Number</label>
+                                    <input type="text" id="individualNumber" placeholder="012-34-56789">
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" id="buisnessman" class="selectButton" name="surveyGroup">
+                                <label for="buisnessman">for proof of expenses</label>
+                                <div>
+                                    <label for="buisnessNumber">Company Registration Number</label>
+                                    <input type="text" id="buisnessNumber" placeholder="010 - 1111 - 2222">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </fieldset>
+        </form>
+        <div>
+            <input type="checkbox" id="checkButton">
+            <label for="checkButton">
+                I have checked the product review, price, and delivery information of the product to be ordered,
+                and I agree to this.
+            </label>
+            <a href="cos_orderFin.html">CHECK OUT</a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="findStore.html">FIND A STORE</a>
+            <ul>
+                <li><a href="customerInquirie.html">CUSTOMER INQUIRIES</a></li>
+                <li><a href="returnRefund.html">RETURN AND REFUND</a></li>
+                <li><a href="paymentInformation.html">PAYMENT INFORMATION</a></li>
+                <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+                <li><a href="termsOfuse.html">TERMS OF USE</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="mui">COMPANY INFORMATION</h3>
+            <p>
+                Hyundai Department Store Co., Ltd. CEO : Kim Hyung-jong and 2 others 12, Teheran-ro 98-gill, Gangnam-gu,
+                Seoul / Business registration number: 211-87-21455 [Check bussiness information] /
+                Mail-order business report:2010-Seoul Gangnam-01882 / Person in charge of personal information
+                management and youth protection: Geun-hyeok jang in charge of member operation and managment /
+                Website/App inquiry:customerservice.kr@cosstore.com / Customer Center: 1800-2765 / Hosting service:
+                Hyundai Department Store / For safe transactions, we have signed a debt payment
+                guarantee contract with Woori Bank to ensure safe transactions when paying in cash. Confirmation of
+                service subscription
+            </p>
+            <div>
+                <p>CopyrightⓒHyundai Department Store. All rights reserved.</p>
+                <ul>
+                    <li><a href="https://www.kakaocorp.com">kakao</a></li>
+                    <li><a href="https://www.pinterest.co.kr/">pinterest</a></li>
+                    <li><a href="https://ko-kr.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.spotify.com/kr-ko/">spotify</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

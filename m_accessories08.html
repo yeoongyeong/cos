@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartPanel">
+        <div>
+            <h2>Shopping Cart</h2>
+            <input type="button" class="btn_close" value="close Button">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/cartProduct_01.png" alt="cartProduct">
+                        <figcaption>
+                            <h3>Leather Phone Pouch</h3>
+                            <dl>
+                                <dt>size</dt>
+                                <dd>no size</dd>
+                                <dt>color</dt>
+                                <dd>black</dd>
+                                <dt>order</dt>
+                                <dd>one</dd>
+                                <dt>Quantity</dt>
+                                <dd>79,000</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <dl>
+                <dt>Total Product amount</dt>
+                <dd>79,000</dd>                
+                <dt>Shipping Free</dt>
+                <dd>0</dd>
+                <dt>TOTAL AMOUNT DUE</dt>
+                <dd>79,000</dd>
+            </dl>
+            <a href="cos_order.html">PLACE AN ORDER</a>
+            <a href="cartView.html">View in shopping cart &gt;</a>
+            <p class="emptyComment">Your cart is empty</p>
+        </div>
+    </div>
+    <div id="searchPanel">
+        <input type="button" class="btn_close" value="close Button">
+        <input type="search" placeholder="Please enter your search term" title="Please enter your search term">
+    </div>    
+
+    <header class="blackTheme">
+        <ul class="rollingBanner">
+            <li>Timeless design regardless of the season.</li>
+            <li>Timeless design made from sustainable, high-quality materials.</li>
+        </ul>
+        <div>
+            <h1>
+                <a href="index.html">COS</a>
+            </h1>
+            <div class="gnbContainer" id="gnbPanel">
+                <ul>
+                    <li>
+                        Women
+                        <ol>
+                            <li>
+                                <a href="w_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="w_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="w_dresses.html">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="w_trousers.html">Trousers &amp; Skirts</a>
+                            </li>
+                            <li>
+                                <a href="w_shoesBag.html">Shoes &amp; Bags</a>
+                            </li>
+                            <li>
+                                <a href="w_accessories.html">Accessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Men
+                        <ol>
+                            <li>
+                                <a href="m_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="m_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="m_trousers.html">Trousers</a>
+                            </li>
+                            <li>
+                                <a href="m_shoes.html">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="m_accessories.html">Aceessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Magazine
+                        <ol>
+                            <li>
+                                <a href="cos_place.html">Place</a>
+                            </li>
+                            <li>
+                                <a href="cos_stories.html">Stories</a>
+                            </li>
+                            <li>
+                                <a href="cos_fashionWeek.html">Autum &amp; Winter 2021</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Sustainability
+                        <ol>
+                            <li>
+                                <a href="cos_ourMission.html">OUR Mission</a>
+                            </li>
+                            <li>
+                                <a href="productCare.html">Product care</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <input type="button" class="btn_close" value="closeButton">
+                <div class="mui bottomBox">
+                    <a href="login.html">ACCOUNT LOGIN</a>
+                    <a href="customerInquirie.html">CUSTOMER INQUIRIES</a>
+                </div>
+            </div>
+            <div class="sideContainer">
+                <input type="button" value="search" data-Panel="searchPanel">
+                <input type="button" value="cart" data-Panel="cartPanel">
+                <a href="login.html">myCOS</a>
+                <input type="button" value="gnbOpen" class="mui" data-Panel="gnbPanel">
+            </div>
+        </div>
+    </header>
+
+    <div id="guidePanel">
+        <h2>Size Guide - Men</h2>
+        <input type="button" class="btn_close" value="close Button">
+        <ul>
+            <li>
+                <a href="#">Suit/Jacket/Coat(CM)</a>
+                <table>
+                    <caption>Suit/Jacket/Coat size table</caption>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>44</th>
+                            <th>46</th>
+                            <th>48</th>
+                            <th>50</th>
+                            <th>52</th>
+                            <th>54</th>
+                            <th>56</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>chest</th>
+                            <td>88</td>
+                            <td>92</td>
+                            <td>96</td>
+                            <td>100</td>
+                            <td>104</td>
+                            <td>108</td>
+                            <td>112</td>
+                        </tr>
+                        <tr>
+                            <th>waist</th>
+                            <td>74</td>
+                            <td>78</td>
+                            <td>82</td>
+                            <td>86</td>
+                            <td>90</td>
+                            <td>94</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <th>hip</th>
+                            <td>90</td>
+                            <td>94</td>
+                            <td>98</td>
+                            <td>102</td>
+                            <td>106</td>
+                            <td>110</td>
+                            <td>114</td>
+                        </tr>
+                        <tr>
+                            <th>shoulder</th>
+                            <td>42</td>
+                            <td>43</td>
+                            <td>44</td>
+                            <td>45</td>
+                            <td>46</td>
+                            <td>47</td>
+                            <td>48</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <a href="#">Jacket/Coat(CM)</a>
+                <table>
+                    <caption>Jacket/Coat size table</caption>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>XS</th>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>L</th>
+                            <td>XL</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>chest</th>
+                            <td>88</td>
+                            <td>94</td>
+                            <td>100</td>
+                            <td>106</td>
+                            <td>112</td>
+                        </tr>
+                        <tr>
+                            <th>waist</th>
+                            <td>74</td>
+                            <td>80</td>
+                            <td>86</td>
+                            <td>92</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <th>hip</th>
+                            <td>90</td>
+                            <td>96</td>
+                            <td>102</td>
+                            <td>108</td>
+                            <td>114</td>
+                        </tr>
+                        <tr>
+                            <th>shoulder</th>
+                            <td>42</td>
+                            <td>43.5</td>
+                            <td>45</td>
+                            <td>46.5</td>
+                            <td>48</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </li>
+            <li>
+                <a href="#">Knit/Shirt(CM)</a>
+                <table>
+                    <caption>Knit/Shirt size table</caption>
+                    <thead>
+                        <tr>
+                            <th>size</th>
+                            <th>XS</th>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>L</th>
+                            <th>XL</th>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <tr>
+                            <th>chest</th>
+                            <td>88</td>
+                            <td>94</td>
+                            <td>100</td>
+                            <td>106</td>
+                            <td>112</td>
+                        </tr>
+                        <tr>
+                            <th>waist</th>
+                            <td>74</td>
+                            <td>80</td>
+                            <td>86</td>
+                            <td>92</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <th>hip</th>
+                            <td>90</td>
+                            <td>96</td>
+                            <td>102</td>
+                            <td>108</td>
+                            <td>114</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </li>
+            <li>
+                <a href="#">Formal Shirt(CM)</a>
+                <table>
+                    <caption>Formal Shirt size table</caption>
+                    <thead>
+                        <tr>
+                            <th>size</th>
+                            <th>37</th>
+                            <th>38</th>
+                            <th>39</th>
+                            <th>40</th>
+                            <th>41</th>
+                            <th>42</th>
+                            <th>43</th>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <tr>
+                            <th>chest</th>
+                            <td>88</td>
+                            <td>92</td>
+                            <td>96</td>
+                            <td>100</td>
+                            <td>104</td>
+                            <td>108</td>
+                            <td>112</td>
+                        </tr>
+                        <tr>
+                            <th>waist</th>
+                            <td>74</td>
+                            <td>78</td>
+                            <td>82</td>
+                            <td>86</td>
+                            <td>90</td>
+                            <td>94</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <th>hip</th>
+                            <td>90</td>
+                            <td>94</td>
+                            <td>98</td>
+                            <td>102</td>
+                            <td>106</td>
+                            <td>110</td>
+                            <td>114</td>
+                        </tr>
+                        <tr>
+                            <th>neck</th>
+                            <td>37</td>
+                            <td>38</td>
+                            <td>39</td>
+                            <td>40</td>
+                            <td>41</td>
+                            <td>42</td>
+                            <td>43</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </li>
+            <li>
+                <a href="#">Pants(CM)</a>
+                <table>
+                    <caption>Pants size table</caption>
+                    <thead>
+                        <tr>
+                            <th>size</th>
+                            <th>44</th> 
+                            <th>46</th>
+                            <th>48</th>
+                            <th>50</th>
+                            <th>52</th>
+                            <th>54</th>
+                            <th>56</th>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <tr>
+                            <th>waist</th>
+                            <td>74</td>
+                            <td>78</td>
+                            <td>82</td>
+                            <td>86</td>
+                            <td>90</td>
+                            <td>94</td>
+                            <td>98</td>
+                        </tr>
+                        <tr>
+                            <th>hip</th>
+                            <td>90</td>
+                            <td>94</td>
+                            <td>98</td>
+                            <td>102</td>
+                            <td>106</td>
+                            <td>110</td>
+                            <td>114</td>
+                        </tr>
+                        <tr>
+                            <th>Inside the leg</th>
+                            <td>80</td>
+                            <td>81</td>
+                            <td>82</td>
+                            <td>83</td>
+                            <td>84</td>
+                            <td>85</td>
+                            <td>86</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </li>
+            <li>
+                <a href="#">Denim</a>
+                <table>
+                    <caption>Denim size table</caption>
+                    <thead>
+                        <tr>
+                            <th>Size(inch)</th>
+                            <th>28</th> 
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                            <th>32</th>
+                            <th>33</th>
+                            <th>34</th>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <tr>
+                            <th>waist(CM)</th>
+                            <td>73.5</td>
+                            <td>76</td>
+                            <td>78.5</td>
+                            <td>81</td>
+                            <td>83.5</td>
+                            <td>86</td>
+                            <td>88.5</td>
+                        </tr>
+                        <tr>
+                            <th>hip(CM)</th>
+                            <td>89.5</td>
+                            <td>92</td>
+                            <td>94.5</td>
+                            <td>97</td>
+                            <td>99.5</td>
+                            <td>102</td>
+                            <td>104.5</td>
+                        </tr>
+                        <tr>
+                            <th>Inside the leg</th>
+                            <td>80</td>
+                            <td>81</td>
+                            <td>82</td>
+                            <td>83</td>
+                            <td>84</td>
+                            <td>85</td>
+                            <td>86</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </li>
+            <li>
+                <a href="#">How to measure body size</a>                
+                <dl>
+                    <dt>BUST:</dt>
+                    <dd>Measure the most prominent part of your chest, with a tape measure over your
+                        shoulder blades.
+                    </dd>
+                    <dt>WAIST CIRCUMFERENC:</dt>
+                    <dd>Measure the thinnest part of your waist.</dd>
+                    <dt>HIP CIRCUMFERENCE:</dt>
+                    <dd>Measure the widest part of your hips.</dd>
+                    <dt>NECK CIRCUMFERENCE:</dt>
+                    <dd>Measure the bottom of your neck.</dd>
+                    <dt>SHOULDER WIDTH:</dt>
+                    <dd>Measure between the ends of both shoulders.</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="#">COS Men's Accessories Size Guide</a>
+                <table>
+                    <caption>shoes</caption>
+                    <thead>
+                        <tr>
+                            <th>korea</th>
+                            <th>265</th>
+                            <th>275</th>
+                            <th>280</th>
+                            <th>285</th>
+                            <th>295</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Europe</td>
+                            <td>41</td>
+                            <td>42</td>
+                            <td>43</td>
+                            <td>44</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>uk</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                    </tbody>
+                </table>         
+            </li>
+        </ul>
+    
+    </div>
+    
+
+    <section class="detailContainer">
+        <ul>
+            <li><img src="images/mAcc08_01.png" alt="menAcc08DetailCut01"></li>
+            <li><img src="images/mAcc08_02.png" alt="menAcc08DetailCut02"></li>
+            <li><img src="images/mAcc08_03.png" alt="menAcc08DetailCut03"></li>
+            <li><img src="images/mAcc08_04.png" alt="menAcc08DetailCut04"></li>  
+        </ul>
+        <aside>
+            <h2>Leather Glove</h2>
+            <div>
+                <h3>COLOR / BLACK</h3>
+                <ul class="chooseColor">
+                    <li class="black">black</li>
+                    <li class="brown">
+                        <a href="m_accessories09.html">brownss</a>
+                    </li>
+                </ul>    
+            </div>
+            <div>
+                <h3>SIZE</h3>
+                <a href="#" data-panel="guidePanel">size Guide</a>
+                <ol>
+                    <li>
+                        <input type="radio" name="chooseSize" id="s">
+                        <label for="s">S</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="chooseSize" id="m">
+                        <label for="m">M</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="chooseSize" id="l">
+                        <label for="l">L</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="chooseSize" id="xl">
+                        <label for="xl">XL</label>
+                    </li>
+                </ol>   
+                <a href="#" data-panel="cartPanel">
+                    <span>
+                        PUT IN A SHOPPING CART
+                        <small>￦115,000</small>
+                    </span>
+                    <span>PLACE AN ORDER</span>
+                </a>
+            </div>
+            <ul class="descriptList">
+                <li>
+                    Product description
+                    <p>Gloves made of fine cashmere lining and softer leather. It has undergone an environmentally friendly chrome-free dyeing process and features a classic
+                        yet sensual design.                        
+                    </p>
+                    <ul>
+                        <li>Wide fit</li>
+                        <li>Ribbed cuffs</li>
+                    </ul>
+                    <p>Outer: 100% cashmere / S / M, L / XL : 100% leather, lining / Product no. 0990313001</p>
+                </li>
+                <li>
+                    Shipping &amp; Returns
+                    <p>Shipping within 1-3 business days<br>
+                        Free Shipping | Free Returns</p>
+                    <p>To: South Korea | Free shipping takes 1-3 business days.</p>
+                    <p>information on our return and refund policy.
+                        Delivery may not be possible in some military areas.
+                        For hygiene reasons, underwear and earring products cannot be returned. (except for defects)</p>
+                    <p>For more information, see More.</p>
+                    <a href="returnRefund.html" class="btn_more">see more</a>
+                </li>
+            </ul>
+        </aside>
+    </section>
+
+    <section class="productRecommend">
+        <h2>RECOMMENDED PRODUCTS</h2>
+        <ul>
+            <li>
+                <a href="m_outerwear01.html">
+                    <img src="images/mAcc08_Recomend1.png" alt="menRecommendProduct01">
+                </a>
+                <div>
+                    <h3>Short Puffer Jacket</h3>
+                    <small>￦335,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                        <li class="green2">green2</li>
+                        <li class="cream">cream</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_outerwear12.html">
+                    <img src="images/mAcc08_Recomend2.png" alt="menRecommendProduct02">
+                </a>
+                <div>
+                    <h3>Double Breasted Check Coat</h3>
+                    <small>￦450,000</small>
+                    <ul class="chooseColor">
+                        <li class="navyOrange">navyOrange</li>     
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_outerwear02.html">
+                    <img src="images/mAcc08_Recomend3.png" alt="menRecommendProduct03">
+                </a>
+                <div>
+                    <h3>Short Puffer Jacket</h3>
+                    <small>￦335,000</small>
+                    <ul class="chooseColor">
+                        <li class="green2">green2</li>
+                        <li class="cream">cream</li>
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_outerwear03.html">
+                    <img src="images/mAcc08_Recomend4.png" alt="menRecommendProduct04">
+                </a>
+                <div>
+                    <h3>Short Puffer Jacket</h3>
+                    <small>￦175,000</small>
+                    <ul class="chooseColor">
+                        <li class="cream">cream</li>
+                        <li class="black">black</li>
+                        <li class="green2">green2</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="subMenuContainer">
+        <nav>
+            <ol>
+                <li>Men &gt;</li>
+                <li>
+                    <a href="m_accessories.html">ACCESSORIES</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <footer>
+        <div>
+            <a href="findStore.html">FIND A STORE</a>
+            <ul>
+                <li><a href="customerInquirie.html">CUSTOMER INQUIRIES</a></li>
+                <li><a href="returnRefund.html">RETURN AND REFUND</a></li>
+                <li><a href="paymentInformation.html">PAYMENT INFORMATION</a></li>
+                <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+                <li><a href="termsOfuse.html">TERMS OF USE</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="mui">COMPANY INFORMATION</h3>
+            <p>
+                Hyundai Department Store Co., Ltd. CEO : Kim Hyung-jong and 2 others 12, Teheran-ro 98-gill, Gangnam-gu, Seoul / Business registration number: 211-87-21455 [Check bussiness information] / 
+                Mail-order business report:2010-Seoul Gangnam-01882 / Person in charge of personal information management and youth protection: Geun-hyeok jang in charge of member operation and managment /
+                Website/App inquiry:customerservice.kr@cosstore.com / Customer Center: 1800-2765 / Hosting service: Hyundai Department Store / For safe transactions, we have signed a debt payment 
+                guarantee contract with Woori Bank to ensure safe transactions when paying in cash. Confirmation of service subscription
+            </p>
+            <div>
+                <p>CopyrightⓒHyundai Department Store. All rights reserved.</p>
+                <ul>
+                    <li><a href="https://www.kakaocorp.com">kakao</a></li>
+                    <li><a href="https://www.pinterest.co.kr/">pinterest</a></li>
+                    <li><a href="https://ko-kr.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.spotify.com/kr-ko/">spotify</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COS</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartPanel">
+        <div>
+            <h2>Shopping Cart</h2>
+            <input type="button" class="btn_close" value="close Button">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/cartProduct_01.png" alt="cartProduct">
+                        <figcaption>
+                            <h3>Leather Phone Pouch</h3>
+                            <dl>
+                                <dt>size</dt>
+                                <dd>no size</dd>
+                                <dt>color</dt>
+                                <dd>black</dd>
+                                <dt>order</dt>
+                                <dd>one</dd>
+                                <dt>Quantity</dt>
+                                <dd>79,000</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <dl>
+                <dt>Total Product amount</dt>
+                <dd>79,000</dd>                
+                <dt>Shipping Free</dt>
+                <dd>0</dd>
+                <dt>TOTAL AMOUNT DUE</dt>
+                <dd>79,000</dd>
+            </dl>
+            <a href="cos_order.html">PLACE AN ORDER</a>
+            <a href="cartView.html">View in shopping cart &gt;</a>
+            <p class="emptyComment">Your cart is empty</p>
+        </div>
+    </div>            
+    <div id="searchPanel">
+        <form>
+            <input type="search" placeholder="Please enter Your Search term" title="Please enter Your Search term">
+            <input type="button" class="btn_close" value="close Button">
+        </form>
+    </div>
+
+    <header class="blackTheme">
+        <ul class="rollingBanner">
+            <li>Timeless design regardless of the season.</li>
+            <li>Timeless design made from sustainable, high-quality materials.</li>
+        </ul>
+        <div class="active">
+            <h1>
+                <a href="index.html">
+                    COS
+                </a>
+            </h1>
+            <div class="gnbContainer" id="gnbPanel">
+                <ul>
+                    <li>
+                        Women
+                        <ol>
+                            <li>
+                                <a href="w_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="w_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="w_dresses.html">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="w_trousers.html">Trousers &amp; Skirts</a>
+                            </li>
+                            <li>
+                                <a href="w_shoesBag.html">Shoes &amp; Bags</a>
+                            </li>
+                            <li>
+                                <a href="w_accessories.html">Accessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Men
+                        <ol>
+                            <li>
+                                <a href="m_outerwear.html">Outerwear</a>
+                            </li>
+                            <li>
+                                <a href="m_tops.html">Tops</a>
+                            </li>
+                            <li>
+                                <a href="m_trousers.html">Trousers</a>
+                            </li>
+                            <li>
+                                <a href="m_shoes.html">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="m_accessories.html">Aceessories</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Magazine
+                        <ol>
+                            <li>
+                                <a href="cos_place.html">Place</a>
+                            </li>
+                            <li>
+                                <a href="cos_stories.html">Stories</a>
+                            </li>
+                            <li>
+                                <a href="cos_fashionWeek.html">Autum &amp; Winter 2021</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Sustainability
+                        <ol>
+                            <li>
+                                <a href="cos_ourMission.html">OUR Mission</a>
+                            </li>
+                            <li>
+                                <a href="productCare.html">Product care</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <input type="button" class="btn_close" value="closeButton">
+                <div class="mui bottomBox">
+                    <a href="login.html">ACCOUNT LOGIN</a>
+                    <a href="customerInquirie.html">CUSTOMER INQUIRIES</a>
+                </div>
+            </div>
+            <div class="sideContainer">
+                <input type="button" value="search" data-Panel="searchPanel">
+                <input type="button" value="cart" data-Panel="cartPanel">
+                <a href="login.html">myCOS</a>
+                <input type="button" value="gnbOpen" class="mui" data-Panel="gnbPanel">
+            </div>
+        </div>
+    </header>
+
+    <section class="listContainer">
+        <div>
+            <h2>TOP</h2>
+            <span>
+                <select title="sortByselect">
+                    <option>SORT BY</option>
+                    <option>Recommended Order</option>
+                    <option>New Product Order</option>
+                    <option>Low Price</option>
+                    <option>High Price</option>
+                </select>
+            </span>
+        </div>
+    
+        <ul class="listContainer">
+            <li>
+                <figure>
+                    <a href="m_tops01.html">
+                        <img src="images/m_tops01.png" data-imgnumb="m_tops01" alt="menTops01">
+                    </a>
+                    <figcaption>
+                        <dl>
+                            <dt>Checked Wool Overshirt</dt>
+                            <dd>This overshirt features a statement-style check pattern. Crafted from heavy-grained wool,
+                                a hidden zip placket and lightly foldable cuffs add to a more modern look.
+                            </dd>
+                        </dl>
+                        <a href="m_tops01.html" class="btn_more">SEE MORE &gt;</a>
+                    </figcaption>
+                </figure>
+                <div>
+                    <h3>Checked Wool Overshirt</h3>
+                    <small>￦225,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops02.html">
+                    <img src="images/m_tops02.png" data-imgnumb="m_tops02" alt="menTops02">
+                </a>
+                <div>
+                    <h3>Jersey Twill Shirt Jacket</h3>
+                    <small>￦150,000</small>
+                    <ul class="chooseColor">
+                        <li class="lightGreen">lightGreen</li>
+                        <li class="dustyBrown">dustyBrown</li>
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops03.html">
+                    <img src="images/m_tops03.png" data-imgnumb="m_tops03" alt="menTops03">
+                </a>
+                <div>
+                    <h3>Jersey Twill Shirt Jacket</h3>
+                    <small>￦150,000</small>
+                    <ul class="chooseColor">
+                        <li class="dustyBrown">dustyBrown</li>
+                        <li class="black">black</li>
+                        <li class="lightGreen">lightGreen</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops04.html">
+                    <img src="images/m_tops04.png" data-imgnumb="m_tops04" alt="menTops04">
+                </a>
+                <div>
+                    <h3>Jersey Twill Shirt Jacket</h3>
+                    <small>￦150,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                        <li class="lightGreen">lightGreen</li>
+                        <li class="dustyBrown">dustyBrown</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops05.html">
+                    <img src="images/m_tops05.png" data-imgnumb="m_tops05" alt="menTops05">
+                </a>
+                <div>
+                    <h3>Relaxed Fit Corduroy Overshirt</h3>
+                    <small>￦150,000</small>
+                    <ul class="chooseColor">
+                        <li class="darkGreen">darkGreen</li>
+                        <li class="darkOrange">darkOrange</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops06.html">
+                    <img src="images/m_tops06.png" data-imgnumb="m_tops06" alt="menTops06">
+                </a>
+                <div>
+                    <h3>Relaxed Fit Corduroy Overshirt</h3>
+                    <small>￦150,000</small>
+                    <ul class="chooseColor">
+                        <li class="darkOrange">darkOrange</li>
+                        <li class="darkGreen">darkGreen</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops07.html">
+                    <img src="images/m_tops07.png" data-imgnumb="m_tops07" alt="menTops07">
+                </a>
+                <div>
+                    <h3>Relaxed Fit Denim Overshirt</h3>
+                    <small>￦150,000</small>
+                    <ul class="chooseColor">
+                        <li class="denim">denim</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops08.html">
+                    <img src="images/m_tops08.png" data-imgnumb="m_tops08" alt="menTops08">
+                </a>
+                <div>
+                    <h3>Slim Fit Long Sleeve Polo Shirt</h3>
+                    <small>￦115,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                        <li class="lightKhakiGreen">lightKhakiGreen</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops09.html">
+                    <img src="images/m_tops09.png" data-imgnumb="m_tops09" alt="menTops09">
+                </a>
+                <div>
+                    <h3>Slim Fit Long Sleeve Polo Shirt</h3>
+                    <small>￦115,000</small>
+                    <ul class="chooseColor">
+                        <li class="lightKhakiGreen">lightKhakiGreen</li>
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops10.html">
+                    <img src="images/m_tops10.png" data-imgnumb="m_tops10" alt="menTops10">
+                </a>
+                <div>
+                    <h3>Oversized Fit Short Sleeve Shirt</h3>
+                    <small>￦89,000</small>
+                    <ul class="chooseColor">
+                        <li class="white2">white2</li>
+                        <li class="darkNavy">darkNavy</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops11.html">
+                    <img src="images/m_tops11.png" data-imgnumb="m_tops11" alt="menTops11">
+                </a>
+                <div>
+                    <h3>Oversized Fit Short Sleeve Shirt</h3>
+                    <small>￦89,000</small>
+                    <ul class="chooseColor">
+                        <li class="darkNavy">darkNavy</li>
+                        <li class="white2">white2</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops12.html">
+                    <img src="images/m_tops12.png" data-imgnumb="m_tops12" alt="menTops12">
+                </a>
+                <div>
+                    <h3>Photo Print T-Shirt</h3>
+                    <small>￦89,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops13.html">
+                    <img src="images/m_tops13.png" data-imgnumb="m_tops13" alt="menTops13">
+                </a>
+                <div>
+                    <h3>Roll Neck Top</h3>
+                    <small>￦69,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                        <li class="red">red</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops14.html">
+                    <img src="images/m_tops14.png" data-imgnumb="m_tops14" alt="menTops14">
+                </a>
+                <div>
+                    <h3>Roll Neck Top</h3>
+                    <small>￦69,000</small>
+                    <ul class="chooseColor">
+                        <li class="red">red</li>
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops15.html">
+                    <img src="images/m_tops15.png" data-imgnumb="m_tops15" alt="menTops15">
+                </a>
+                <div>
+                    <h3>Relaxed Sweatshirt</h3>
+                    <small>￦250,000</small>
+                    <ul class="chooseColor">
+                        <li class="green2">green</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops16.html">
+                    <img src="images/m_tops16.png" data-imgnumb="m_tops16" alt="menTops16">
+                </a>
+                <div>
+                    <h3>Oversized Fit Teddy Sweatshirt</h3>
+                    <small>￦105,000</small>
+                    <ul class="chooseColor">
+                        <li class="black">black</li>
+                        <li class="beige">beige</li>
+                        <li class="blue">blue</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops17.html">
+                    <img src="images/m_tops17.png" data-imgnumb="m_tops17" alt="menTops17">
+                </a>
+                <div>
+                    <h3>Oversized Fit Teddy Sweatshirt</h3>
+                    <small>￦105,000</small>
+                    <ul class="chooseColor">
+                        <li class="beige">beige</li>
+                        <li class="blue">blue</li>
+                        <li class="black">black</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops18.html">
+                    <img src="images/m_tops18.png" data-imgnumb="m_tops18" alt="menTops18">
+                </a>
+                <div>
+                    <h3>Oversized Fit Teddy Sweatshirt</h3>
+                    <small>￦105,000</small>
+                    <ul class="chooseColor">
+                        <li class="blue">blue</li>
+                        <li class="black">black</li>
+                        <li class="beige">beige</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops19.html">
+                    <img src="images/m_tops19.png" data-imgnumb="m_tops19" alt="menTops19">
+                </a>
+                <div>
+                    <h3>Cashmere Hoodie</h3>
+                    <small>￦290,000</small>
+                    <ul class="chooseColor">
+                        <li class="darkGray">darkGray</li>
+                        <li class="dustyGray">dustyGray</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops20.html">
+                    <img src="images/m_tops20.png" data-imgnumb="m_tops20" alt="menTops20">
+                </a>
+                <div>
+                    <h3>Cashmere Hoodie</h3>
+                    <small>￦290,000</small>
+                    <ul class="chooseColor">
+                        <li class="dustyGray">dustyGray</li>
+                        <li class="darkGray">darkGray</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops21.html">
+                    <img src="images/m_tops22.png" data-imgnumb="m_tops22" alt="menTops21">
+                </a>
+                <div>
+                    <h3>Half Zip Sweatshirt</h3>
+                    <small>￦89,000</small>
+                    <ul class="chooseColor">
+                        <li class="darkNavy">darkNavy</li>
+                        <li class="dustyLightGreen">dustyLightGreen</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="m_tops22.html">
+                    <img src="images/m_tops21.png" data-imgnumb="m_tops21" alt="menTops22">
+                </a>
+                <div>
+                    <h3>Half Zip Sweatshirt</h3>
+                    <small>￦89,000</small>
+                    <ul class="chooseColor">
+                        <li class="dustyLightGreen">dustyLightGreen</li>
+                        <li class="darkNavy">darkNavy</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    
+        <div class="menBanner">
+            <p>
+                Introducing COS's collection of sweatshirts designed for a modern look that's casual and perfect for everyday wear.
+                From contemporary oversized silhouettes to classic crew necks, practical zip-ups and hoodies.
+                Contrasting textures and colors are added to the soft, subdued cotton fabric.
+            </p>
+        </div>
+    </section>   
+
+    <footer>
+        <div>
+            <a href="findStore.html">FIND A STORE</a>
+            <ul>
+                <li><a href="customerInquirie.html">CUSTOMER INQUIRIES</a></li>
+                <li><a href="returnRefund.html">RETURN AND REFUND</a></li>
+                <li><a href="paymentInformation.html">PAYMENT INFORMATION</a></li>
+                <li><a href="privacyPolicy.html">PRIVACY POLICY</a></li>
+                <li><a href="termsOfuse.html">TERMS OF USE</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="mui">COMPANY INFORMATION</h3>
+            <p>
+                Hyundai Department Store Co., Ltd. CEO : Kim Hyung-jong and 2 others 12, Teheran-ro 98-gill, Gangnam-gu, Seoul / Business registration number: 211-87-21455 [Check bussiness information] / 
+                Mail-order business report:2010-Seoul Gangnam-01882 / Person in charge of personal information management and youth protection: Geun-hyeok jang in charge of member operation and managment /
+                Website/App inquiry:customerservice.kr@cosstore.com / Customer Center: 1800-2765 / Hosting service: Hyundai Department Store / For safe transactions, we have signed a debt payment 
+                guarantee contract with Woori Bank to ensure safe transactions when paying in cash. Confirmation of service subscription
+            </p>
+            <div>
+                <p>CopyrightⓒHyundai Department Store. All rights reserved.</p>
+                <ul>
+                    <li><a href="https://www.kakaocorp.com">kakao</a></li>
+                    <li><a href="https://www.pinterest.co.kr/">pinterest</a></li>
+                    <li><a href="https://ko-kr.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.spotify.com/kr-ko/">spotify</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

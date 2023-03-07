@@ -1,0 +1,1391 @@
+/* global CSS는 페이지 전체를 다루는 부분이다(all use part)
+    모든 페이지에서 사용되는 공통된 영역을 담아준다
+    (header, footer..등..) */
+body{
+    background-color: #ffffff;
+}
+body:not(.rollingBanner),
+[class$=Container] input::placeholder,
+[class^='sign'] input[type="date"],
+[class^='sign'] input[type="submit"],
+.orderContainer input,
+#searchPanel input{
+    font-family: 'Raleway';
+}
+/* font를 항상 먼저 불러와서 값을 입력한다 */
+body * strong,
+body * span{
+    display: block;
+}
+
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+
+[id$='Panel']{
+    display: none;  
+}
+[id$='Panel'].active{
+    display: block;
+}
+/* class속성값이 panel로 끝나면 적용된다
+    이렇게 묶을 수 있게 코드를 짤때 class 끝을 맞춰준다 */
+
+#cartPanel > div .emptyComment{
+    display: none;
+}
+/* 코드 작성시 panel부분이 다 열려있으면 복잡하므로 class='activ'를 달아 작업한다 */
+
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none; color: inherit;
+}
+.chooseColor li a{
+    display: block;
+}
+.btn_close,
+.chooseColor li,
+.chooseColor li:last-of-type a,
+.sideContainer a{
+    text-indent: -9999px;
+}
+[class$='Container'] img,
+[class$='Recommend'] img{
+    width: 100%; display: block;
+}
+/* 전체영역에서 쓰이는 컬러부분*/
+.chooseColor li{
+    width: 15px; height: 15px; display: inline-block;
+}
+/* 텍스트 삭제, 넓이 높이 규격잡고, inline-block으로 변경하여 옆으로 붙을 수 있게함 */
+
+.chooseColor li.black{
+    background-color: black;
+}
+.chooseColor li.blackGray{
+    background: url('../images/colorChip_mAcc01.png') no-repeat center; 
+}
+.chooseColor li.blackBeige{
+    background: url('../images/colorChip_mAcc02.png') no-repeat center;
+}
+.chooseColor li.white{
+    background-color: white;
+}
+.chooseColor li.white2{
+    background-color: #fff9eb;
+}
+.chooseColor li.white3{
+    background-color: #f6f6f6
+}
+.chooseColor li.offWhite{
+    background-color: #e8e7e6;
+}
+.chooseColor li.offWhite2{
+    background-color: #e4e3d7;
+}
+.chooseColor li.offWhite3{
+    background-color: #a8a39e;
+}
+.chooseColor li.navyOffWhite{
+    background: url('../images/colorChip_wTop02.png') no-repeat center;
+}
+.chooseColor li.whiteBlue{
+    background: url('../images/colorChip_wTop01.png') no-repeat center;
+}
+.chooseColor li.whiteNavy{
+    background: url('../images/colorChip_mAcc03.png') no-repeat center;
+}
+.chooseColor li.offWhiteBlue{
+    background: url('../images/colorChip_mOuter01.png') no-repeat center;
+}
+.chooseColor li.red{
+    background-color: #ea3434;
+}
+.chooseColor li.blueMaroon{
+    background: url('../images/colorChip_wTop03.png') no-repeat center;
+}
+.chooseColor li.blue{
+    background-color: #3c53a4;
+}
+.chooseColor li.blue2{
+    background-color:#393d4d;
+}
+.chooseColor li.blue3{
+    background-color: #282961;
+}
+.chooseColor li.blue4{
+    background-color: #5e799f;
+}
+.chooseColor li.blue5{
+    background-color: #22273b;
+}
+.chooseColor li.indigoBlue{
+    background-color: #24272f;
+}
+.chooseColor li.lightBlue{
+    background-color: #7e9fc4;
+}
+.chooseColor li.darkBlue{
+    background-color: #12213c;
+}
+.chooseColor li.brightBlue{
+    background-color: #32459c;
+}
+.chooseColor li.dustyPink2{
+    background-color: #db9991;
+}
+.chooseColor li.dustyPink{
+    background-color: #f9dee3;
+}
+.chooseColor li.pink{
+    background-color: #ffe1e1;
+}
+.chooseColor li.khaki{
+    background-color: #52530e;
+}
+.chooseColor li.dustyLightGreen{
+    background-color: #cbe1cb;
+}
+.chooseColor li.dustyLightGreen2{
+    background-color: #dbe6b9;
+}
+.chooseColor li.darkGreen{
+    background-color: #1d291d;
+}
+.chooseColor li.lightGreen{
+    background-color: #979472;
+}
+.chooseColor li.green{
+    background-color: #2c3929;
+}
+.chooseColor li.green2{
+    background-color: #61a275;
+}
+.chooseColor li.green3{
+    background-color: #d7e0aa;
+}
+.chooseColor li.green4{
+    background-color: #958122;
+}
+.chooseColor li.green5{
+    background-color: #6c6a35;
+}
+.chooseColor li.oliveGreen{
+    background-color: #7d7d3f;
+}
+.chooseColor li.lightKhakiGreen{
+    background-color: #c3bf97;
+}
+.chooseColor li.navy{
+    background-color: #242844;
+}
+.chooseColor li.navy2{
+    background-color: #363a52;
+}
+.chooseColor li.darkNavy{
+    background-color: #111d2c;
+}
+.chooseColor li.gold{
+    background-color: #e9be61;
+}
+.chooseColor li.gray{
+    background-color: #3a3c45;
+}
+.chooseColor li.gray2{
+    background-color: #e0dedb;
+}
+.chooseColor li.gray3{
+    background-color: #383435;
+}
+.chooseColor li.dustyGray{
+    background-color: #717171;
+}
+.chooseColor li.darkGray{
+    background-color: #2f2f2f;
+}
+.chooseColor li.lightGray{
+    background-color: #d5d5d5;
+}
+.chooseColor li.lightGray2{
+    background-color: #e9e9e9;
+}
+.chooseColor li.lightGray3{
+    background-color: #838382;
+}
+.chooseColor li.moleGray{
+    background-color: #c6c6ba;
+}
+.chooseColor li.washedGray{
+    background-color: #606060;
+}
+.chooseColor li.beige{
+    background-color: #94643e;
+}
+.chooseColor li.beige2{
+    background-color: #e4d0ce;
+}
+.chooseColor li.beige3{
+    background-color: #f6f0e4;
+}
+.chooseColor li.lightBeige{
+    background-color: #fff3dc;
+}
+.chooseColor li.lightBeige2{
+    background-color: #f0e5cf;
+}
+.chooseColor li.lightBeige3{
+    background-color: #e6e2db;
+}
+.chooseColor li.lightBeige4{
+    background-color: #e1d5c2
+}
+.chooseColor li.darkBeige{
+    background-color: #a37856;
+}
+.chooseColor li.denim{
+    background-color: #272e43;
+}
+.chooseColor li.teal{
+    background-color: #294956;
+}
+.chooseColor li.teal2{
+    background-color: #306654;
+}
+.chooseColor li.dustyMall{
+    background-color: #c9beb8;
+}
+.chooseColor li.burgundy{
+    background-color: #65372c;
+}
+.chooseColor li.brown{
+    background-color: #5d4c40;
+}
+.chooseColor li.brown2{
+    background-color: #bc9667;
+}
+.chooseColor li.brown3{
+    background-color: #a06249;
+}
+.chooseColor li.brown4{
+    background-color: #d8cdc9;
+}
+.chooseColor li.brown5{
+    background-color: #a39489;
+}
+.chooseColor li.dustyBrown{
+    background-color:#583f2c;
+}
+.chooseColor li.dustyLilac{
+    background-color: #e4d9fe;
+}
+.chooseColor li.lilacPurple{
+    background-color: #efe1f5;
+}
+.chooseColor li.lilacPurple2{
+    background-color: #9d828c;
+}
+.chooseColor li.cream{
+    background-color: #f8edd6;
+}
+.chooseColor li.cream2{
+    background-color: #f1ede6;
+}
+.chooseColor li.darkOrange{
+    background-color: #a23e19;
+}
+.chooseColor li.dustyLightTurquoise{
+    background-color: #d4d6d3;
+}
+.chooseColor li.yellow{
+    background-color: #dfb73b;
+}
+.chooseColor li.navyOrange{
+    background: url('../images/colorChip_wDress01.png') no-repeat center;
+}
+
+#map iframe{
+    width: 100%;
+}
+/* all Use Part */ 
+
+@media screen and (max-width: 767px){
+    .mui{
+        display: block;
+    }
+    header > div,
+    .shopContainer,
+    .textureContainer .bx-wrapper,
+    .listContainer > div:not(:last-child),
+    .listContainer > ul,
+    .productRecommend,
+    .inquiryContainer, .paymentContainer,
+    .termsContainer, .returnContainer,
+    .privacyCantainer, .magazineContainer,
+    .collectionContainer div,
+    .placeListContainer > div ul,
+    .storiesListContainer > div ul,
+    .placeContainerC > div:not(:nth-of-type(1)),
+    .storiesContainerC > div,
+    [class^='stories'] div, [class^='sign'],
+    .careListContainer div, [class^='myCos'],
+    [class^='fin'],
+    .careContainerC .cimgBtxt div,
+    .myCosContainerC .serviceMenu,
+    .missionContainerB .careInfotxt, 
+    .missionContainerB .limgRtxt, .missionContainerB .rimgLtxt,
+    .placeContainerA div, .placeContainerB div, 
+    .myChangeContainer, .cartViewContainer form, .cartViewContainer div,
+    .orderContainer, .storeFindContainer, .placeContainerC .bx-wrapper figure{
+        width: 92%; margin: 0 auto;
+    }
+
+    header > ul.rollingBanner{ 
+        display: none;
+    }
+    header{
+        position: fixed; left: 0; top: 0; z-index: 10; 
+    }
+    header.active{
+        background-color: rgba(0,0,0,0.3); width: 100%; height: 65px;
+    }
+    header.blackTheme{
+        background-color: #ffffff; width: 100%; height: 65px;
+    }
+    header:hover > div.whiteTheme .gnbContainer{
+        color: #4c4c4c; 
+    }
+    header > div{
+        position: relative;
+    }
+    header > div h1{
+        left: 0; z-index: 1000;
+        max-width: 50px; width: 17%; line-height: 20px;
+    }
+    header > div h1 a{
+        display: block; text-indent: -9999px;
+        background: no-repeat center / contain;
+    }
+    header > div:not(.whiteTheme) h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    header:hover > div:not(.whiteTheme) h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    header > div.whiteTheme h1 a{
+        background-image: url('../images/logo_white.png');
+    }
+    header > div h1,
+    header > div .sideContainer{
+        position: absolute;
+        top: 25px;
+    }
+    header > div .gnbContainer{
+        width: 100%; position: fixed; right: 0; height: 100%;
+        top: 0; z-index: 9999;
+        font-weight: 300; align-content: flex-start; background-color: #f3f3f3;
+    }
+    header > div .gnbContainer .btn_close{
+        display: block; right: 15px; top: 25px; position: absolute;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    header > div .gnbContainer > .bottomBox{
+        position: absolute; bottom: 0; left: 0; padding: 0 7.8% 25px;
+        width: 100%; box-sizing: border-box;
+    }
+    header > div .gnbContainer > .bottomBox a{
+        display: block; width: 50%; margin: 0 auto; text-align: center;
+        border-bottom: 1px solid #e4e4e4; padding-bottom: 10px;
+        font-size: 11px;
+    }
+    header > div .gnbContainer > .bottomBox a:first-child{
+        margin-bottom: 30px;
+    }
+    header > div .gnbContainer > .bottomBox a:nth-of-type(1){
+        background: url("../images/bul_myBlack.png") no-repeat left top / 13px;
+        padding-left: 10px;
+    }
+    header > div .gnbContainer > .bottomBox a:nth-of-type(2){
+        background: url("../images/bul__info.png") no-repeat left top / 13px;
+        padding-left: 10px;
+    }
+    header > div .gnbContainer ul:first-child{
+        padding-top: 25vw;
+    }
+    header > div .gnbContainer ul{
+        padding: 0 6.4%;
+        text-align: left; font-size: 15px; font-weight: 300;
+    }
+    header > div .gnbContainer ul > li{
+        position: relative; cursor: default; margin-bottom: 30px;
+    }
+    header > div .gnbContainer ul > li:after{
+        content: url("../images/bul_arrow02.png"); position: absolute; right: 0; top: 0;
+        transition: transform 0.35s ease-out; transform: rotate(0deg); 
+    }
+    header > div .gnbContainer ul > li:hover:after{
+        transform: rotate(90deg);
+    }
+    header > div .gnbContainer ul > li ol{
+        margin-top: 30px;
+    }
+    header > div .gnbContainer ul > li ol li{
+        display: none; color: #878787; margin-bottom: 35px;
+    }
+    header > div .gnbContainer ul> li:hover ol li{
+        display: block;
+    }
+    header > div .sideContainer{
+        right: 0; line-height: 15px;
+    }
+    header > div .sideContainer > *{
+        display: inline-block; vertical-align: middle;
+    }
+    header div .sideContainer >*{
+        margin-left: 15px;
+    }
+    header div .sideContainer input{
+        width: 16px; height: 16px; text-indent: -9999px;
+        border-style: none; box-sizing: border-box; background-color: transparent;
+        background: no-repeat center;        
+    }
+    header div .sideContainer input[type='button']:nth-of-type(1){
+        background: url("../images/bul_search.png") no-repeat center / 13px;
+    }
+    header div .sideContainer input[type='button']:nth-of-type(2){
+        background: url('../images/bul_cart.png') no-repeat center / 13px;
+    }
+    header div .sideContainer input[type='button']:nth-of-type(3){
+        background: url("../images/bul_mui.png") no-repeat center / 13px;
+    }
+    header div .sideContainer a{
+        display: none;
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(1){
+        background-image: url('../images/bul_searchBlack.png');
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(2){
+        background-image: url('../images/bul_cartBlack.png');
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(3){
+        background-image: url('../images/bul_muiBlack.png');
+    }
+
+
+    footer{
+        padding-top: 30px; background-color: #ffffff;
+        border-top: 1px solid #e4e4e4; font-size: 11px;
+    }
+
+    footer > div:first-of-type > a{
+        width: 92%; display: block; margin: 0 auto 30px;
+        border: 1px solid #e4e4e4; text-align: center;
+        padding: 10px 0; font-weight: 300;
+    }
+
+    footer > div:first-of-type ul li{
+     margin-bottom: 20px;
+    }
+    footer > div:first-of-type ul li a{
+        display: block; text-align: center; font-weight: 500;
+    }
+    footer .mui{
+        font-size: 11px; font-weight: 500; text-align: center;
+        width: 67%; margin: 0 auto 30px;
+    }
+    footer .mui:after{
+        content: url("../images/bul_arrow02.png"); transition: transform 0.35s ease-in-out;
+        transform: rotate(0deg); display: inline-block; margin-left: 10px;
+    }
+    footer .mui.active:after{
+        transform: rotate(180deg);
+    }
+    footer .mui+p{
+        display: none;
+    }
+    footer .mui.active+p{
+        display: block;
+    }
+    footer div:nth-of-type(2){
+        background-color: #f9f9f9; position: relative;
+        padding: 25px 3.2%;
+    }
+    footer div p{
+        font-size: 11px; color: #878787; font-weight: 400; line-height: 18px;
+        margin-bottom: 25px;
+    }
+    footer div:nth-of-type(2) div{
+        max-width: 768px;
+    }
+    footer div:nth-of-type(2) div > p,
+    footer div:nth-of-type(2) div ul{
+        text-align: center;
+    }
+    footer div:nth-of-type(2) div ul li{
+        display: inline-block; text-indent: -9999px;
+        width: 25px; height: 25px; background: no-repeat center;    
+    }
+    footer div:nth-of-type(2) div ul li:not(:first-child){
+        margin-left: 8px;
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(1){
+        background-image: url('../images/bul_kakao.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(2){
+        background-image: url('../images/bul_pinter.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(3){
+        background-image: url('../images/bul_facebook.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(4){
+        background-image: url('../images/bul_spotify.png');
+    }
+
+    #cartPanel{
+        position: fixed; top: 0; width: 100%; max-height: 750px; height: 100%;
+        background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
+    }
+    /* 패널이 딸려 내려오지 않게 fixed로 고정
+    z-index를 사용하여 맨 위로 오게끔.. */
+
+    #cartPanel > div{
+        position: relative;
+    }
+    #cartPanel > div h2{
+        padding: 50px 0 20px;
+        text-align: center; font-size: 11px; font-weight: 400; color: #4c4c4c; 
+        border-bottom: 1px solid #e4e4e4;        
+    }
+    #cartPanel > div .btn_close{
+        display: block; top: 25px; right: 15px; position: absolute;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    #cartPanel > div ul{
+        max-height: 340px; overflow-y: scroll; padding-top: 20px;
+    }
+    /* 스크롤은 이렇게 해야함.. */
+
+    #cartPanel > div ul li{
+        padding-bottom: 50px;
+    }
+    #cartPanel > div ul li figure{
+        display: flex; 
+    }
+    #cartPanel > div ul li figure img{
+        width: 50%;
+    }
+    #cartPanel > div ul li figure figcaption{
+        float: left; padding: 15px 0 0 15px; font-size: 11px;
+        font-weight: 400;
+    }
+    #cartPanel > div ul li figure figcaption h3{
+         color: #4c4c4c; 
+        padding-bottom: 20px;
+    }
+    #cartPanel > div ul li figure figcaption dl::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div ul li figure figcaption dl{
+        color: #878787; line-height: 25px;
+    }
+    #cartPanel > div ul li figure figcaption dl dt{
+        float: left; font-weight: 400;
+    }
+    #cartPanel > div ul li figure figcaption dl dd{
+        margin-left: 60px; font-weight: 300;
+    }
+    #cartPanel > div > dl::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div > dl{
+        font-size: 11px; line-height: 25px; 
+    }
+    #cartPanel > div > dl dt{
+        float: left; color: #4c4c4c;
+    }
+    #cartPanel > div > dl dd{
+        color: #878787; width: 20%; margin-left: auto;
+    }
+    #cartPanel > div > dl dd:nth-of-type(2),
+    #cartPanel > div > dl dd:nth-of-type(3){
+        margin-bottom: 20px;
+    }
+    /* 원래는 200px인데 잘려서 줄였는데 맞나요..ㅜ */
+    #cartPanel > div a:nth-of-type(1){
+        display: block; max-width: 325px; margin: 0 auto 25px; padding: 10px 0;
+        text-align: center; color: #4c4c4c; font-size: 11px; font-weight: 500;
+        border: 1px solid #4c4c4c;
+    }
+    #cartPanel > div a:nth-of-type(2){
+        display: block; text-align: center; color: #4c4c4c; font-weight: 400;
+        font-size: 11px;
+    }
+    
+    #searchPanel{
+        position: fixed; width: 100%; left: 0; top: 0;
+        background-color: #f3f3f3; z-index: 1000;
+    }
+    #searchPanel input{
+        position: relative;  
+    }
+    #searchPanel input[type='search']{
+        display: block; max-width: 280px; width: 58%; margin: 20px auto; padding: 20px 0;
+        border-style: none; background-color: transparent;
+        text-align: center;  font-size: 11px; color: #4c4c4c; font-weight: 300; 
+        border-bottom: 1px solid #e4e4e4;                
+    }
+    #searchPanel .btn_close{
+        position: absolute; right: 15px; top: 25px;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent;
+
+    }
+
+}
+/* mobile*/
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .mui{
+        display: block;
+    }
+    header > div,
+    .shopContainer,
+    .textureContainer .bx-wrapper,
+    .listContainer > div:not(:last-child),
+    .listContainer > ul,
+    .detailContainer .bx-wrapper,
+    .productRecommend,
+    .inquiryContainer, .paymentContainer,
+    .termsContainer, .returnContainer,
+    .privacyCantainer, .magazineContainer,
+    .collectionContainer div,
+    .placeListContainer > div ul,
+    .storiesListContainer > div ul,
+    .placeContainerC > div:not(:nth-of-type(1)),
+    .storiesContainerC > div,
+    [class^='stories'] div,
+    .careListContainer div, 
+    [class$='ContainerC'] div,
+    [class^='myCos'],
+    .myCosContainerC .serviceMenu,
+    .missionContainerB .careInfotxt,
+    .missionContainerB .limgRtxt, .missionContainerB .rimgLtxt,
+    .placeContainerA div, .placeContainerB div, 
+    .myChangeContainer, .cartViewContainer form, .cartViewContainer div,
+    .orderContainer, .storeFindContainer{
+        width: 92%; margin: 0 auto;
+    }
+
+    header > ul.rollingBanner{ 
+        background-color: #000000; padding: 10px 0; height: 16px;
+        overflow-y: hidden; position: relative;
+    }
+    header > ul.rollingBanner li{
+        position: absolute; width: 100%;
+        color: #ffffff; font-weight: 200; font-family: karla; text-transform: uppercase; 
+        text-align: center; opacity: 0; top: -16px; line-height: 36px;
+        transition-property: opacity, top; transition-duration: 0.5s, 0.75s;
+        transition-timing-function: ease-out, ease-in;
+    }
+    header > ul.rollingBanner li.active{
+        opacity: 1; top: 0;
+    }
+    header{
+        position: fixed; left: 0; top: 0; z-index: 10;
+        width: 100%; 
+    }
+    header.active{
+        background-color: rgba(0,0,0,0.3); width: 100%; height: 160px;
+    }
+    header.blackTheme{
+        background-color: #ffffff; width: 100%; height: 160px;
+    }
+    header:hover > div.whiteTheme .gnbContainer{
+        color: #4c4c4c; 
+    }
+    header > div{
+        position: relative;
+    }
+    header > div h1{
+        width: 121px; line-height: 39px;
+    }
+    header > div h1 a{
+        display: block; text-indent: -9999px;
+        background: no-repeat center / contain;
+    }
+    header > div:not(.whiteTheme) h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    header:hover > div:not(.whiteTheme) h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    header > div.whiteTheme h1 a{
+        background-image: url('../images/logo_white.png');
+    }
+    header > div h1,
+    header > div .gnbContainer .btn_close,
+    header > div .sideContainer{
+        position: absolute;
+        top: 45px;
+    }
+    header > div h1{
+        left: 0; z-index: 1000;
+    }
+    header > div .gnbContainer{
+        width: 50%; position: fixed; right: 0; height: 100%;
+        top: 36px; z-index: 10;
+        font-weight: 300; align-content: flex-start; background-color: #f3f3f3;
+    }
+    header > div .gnbContainer .btn_close{
+        display: block; right: 25px; position: absolute;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    header > div .gnbContainer > .bottomBox{
+        position: absolute; bottom: 0; left: 0; padding: 0 7.8% 50px;
+        width: 100%; box-sizing: border-box;
+    }
+    header > div .gnbContainer > .bottomBox a{
+        display: block; width: 50%; margin: 0 auto; text-align: center;
+        border-bottom: 1px solid #e4e4e4; padding: 0 0 10px 35px; font-size: 13px;
+    }
+    header > div .gnbContainer > .bottomBox a:nth-of-type(1){
+        background: url("../images/bul_myBlack.png") left top no-repeat;
+       margin-bottom: 30px;
+    }
+    header > div .gnbContainer > .bottomBox a:nth-of-type(2){
+        background: url("../images/bul__info.png") left top no-repeat;
+       
+    }
+    header > div .gnbContainer ul:first-child{
+        padding-top: 130px;
+    }
+    header > div .gnbContainer ul{
+        padding: 0 6.4%;
+        text-align: left; font-size: 18px; font-weight: 300;
+    }
+    header > div .gnbContainer ul > li{
+        position: relative; cursor: default; margin-bottom: 35px;
+    }
+    header > div .gnbContainer ul > li:after{
+        content: url("../images/bul_arrow02.png"); position: absolute; right: 0; top: 0;
+        transition: transform 0.35s ease-out; transform: rotate(0deg); 
+    }
+    header > div .gnbContainer ul > li:hover:after{
+        transform: rotate(90deg);
+    }
+    header > div .gnbContainer ul > li ol{
+        margin-top: 30px;
+    }
+    header > div .gnbContainer ul > li ol li{
+        display: none; color: #878787; margin-bottom: 35px;
+    }
+    header > div .gnbContainer ul> li:hover ol li{
+        display: block;
+    }
+    header > div .sideContainer{
+        right: 0; line-height: 40px;
+    }
+    header > div .sideContainer > *{
+        display: inline-block; vertical-align: middle;
+    }
+    header div .sideContainer >*{
+        margin-left: 25px;
+    }
+    header div .sideContainer input{
+        width: 16px; height: 16px; text-indent: -9999px;
+        border-style: none; box-sizing: border-box; background-color: transparent;
+        background: no-repeat center;        
+    }
+    header div .sideContainer input[type='button']:nth-of-type(1){
+        background-image: url("../images/bul_search.png");
+    }
+    header div .sideContainer input[type='button']:nth-of-type(2){
+        background-image: url('../images/bul_cart.png');
+    }
+    header div .sideContainer input[type='button']:nth-of-type(3){
+        background-image: url("../images/bul_mui.png");
+    }
+    header div .sideContainer a{
+        display: none;
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(1){
+        background-image: url('../images/bul_searchBlack.png');
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(2){
+        background-image: url('../images/bul_cartBlack.png');
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(3){
+        background-image: url('../images/bul_muiBlack.png');
+    }
+
+
+    footer{
+        padding-top: 30px; background-color: #ffffff;
+        border-top: 1px solid #e4e4e4; font-size: 13px;
+    }
+    footer > div:first-of-type ul{
+        max-width: 768px; margin: 0 auto; 
+    }
+    footer > div:first-of-type > a{
+        width: 62%; display: block; margin: 0 auto 30px;
+        border: 1px solid #e4e4e4; text-align: center;
+        padding: 10px 0; font-weight: 300;
+    }
+    footer > div:first-of-type ul:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-of-type ul li{
+        float: left; width: 33.33%; margin-bottom: 25px;
+    }
+    footer > div:first-of-type ul li a{
+        display: block; text-align: center; font-weight: 500;
+    } 
+    footer div:nth-of-type(2){
+        background-color: #f9f9f9; position: relative;
+        padding: 25px 3.2%;
+    }
+    footer div p{
+        color: #878787; font-weight: 300; line-height: 18px; margin-bottom: 25px;
+    }
+    footer div:nth-of-type(2) div{
+        max-width: 768px;
+    }
+    footer div:nth-of-type(2) h3{
+        display: none;
+    }
+    footer div:nth-of-type(2) div > p,
+    footer div:nth-of-type(2) div ul{
+        text-align: center;
+    }
+    footer div:nth-of-type(2) div ul li{
+        display: inline-block; text-indent: -9999px;
+        width: 25px; height: 25px; background: no-repeat center;    
+    }
+    footer div:nth-of-type(2) div ul li:not(:first-child){
+        margin-left: 8px;
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(1){
+        background-image: url('../images/bul_kakao.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(2){
+        background-image: url('../images/bul_pinter.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(3){
+        background-image: url('../images/bul_facebook.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(4){
+        background-image: url('../images/bul_spotify.png');
+    }
+
+    #cartPanel{
+        position: fixed; top: 35px; right: 0;  width: 65%; height: 100%;
+        background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
+    }
+    /* 패널이 딸려 내려오지 않게 fixed로 고정
+    z-index를 사용하여 맨 위로 오게끔.. */
+
+    #cartPanel > div{
+        position: relative;
+    }
+    #cartPanel > div h2{
+        padding: 50px 0 20px;
+        text-align: center; font-size: 20px; font-weight: 300; color: #4c4c4c; 
+        border-bottom: 1px solid #e4e4e4;        
+    }
+    #cartPanel > div .btn_close{
+        display: block; top: 35px; right: 0; position: absolute;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    #cartPanel > div ul{
+        max-height: 340px; overflow-y: scroll; padding-top: 50px;
+    }
+    /* 스크롤은 이렇게 해야함.. */
+
+    #cartPanel > div ul li{
+        padding-bottom: 40px;
+    }
+    #cartPanel > div ul li figure{
+        display: flex; 
+    }
+    #cartPanel > div ul li figure figcaption{
+        float: left; padding: 25px 0 0 30px; font-size: 18px;
+    }
+    #cartPanel > div ul li figure figcaption h3{
+        font-weight: 300; color: #4c4c4c; 
+        padding-bottom: 35px;
+    }
+    #cartPanel > div ul li figure figcaption dl::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div ul li figure figcaption dl{
+        color: #878787; line-height: 25px;
+    }
+    #cartPanel > div ul li figure figcaption dl dt{
+        float: left; font-weight: 400;
+    }
+    #cartPanel > div ul li figure figcaption dl dd{
+        margin-left: 210px; font-weight: 300;
+    }
+    #cartPanel > div > dl::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div > dl{
+        font-size: 18px; line-height: 25px; 
+    }
+    #cartPanel > div > dl dt{
+        float: left; color: #4c4c4c;
+    }
+    #cartPanel > div > dl dd{
+        color: #878787; width: 20%; margin-left: auto;
+    }
+    #cartPanel > div > dl dd:nth-of-type(2),
+    #cartPanel > div > dl dd:nth-of-type(3){
+        margin-bottom: 50px;
+    }
+    /* 원래는 200px인데 잘려서 줄였는데 맞나요..ㅜ */
+    #cartPanel > div a:nth-of-type(1){
+        display: block; max-width: 325px; margin: 0 auto 25px; padding: 10px 0;
+        text-align: center; color: #4c4c4c;
+        border: 1px solid #4c4c4c;
+    }
+    #cartPanel > div a:nth-of-type(2){
+        display: block; text-align: center; color: #4c4c4c;
+    }
+    
+    #searchPanel{
+        position: fixed; width: 100%; left: 0; top: 35px;
+        background-color: #f3f3f3; padding: 70px 0; z-index: 1000;
+    }
+    #searchPanel input{
+        position: relative;  
+    }
+    #searchPanel input[type='search']{
+        display: block; max-width: 615px; margin: 0 auto; padding: 30px 0; width: 32%;
+        border-style: none; background-color: transparent;
+        text-align: center;  font-size: 18px; color: #4c4c4c; font-weight: 300; 
+        border-bottom: 1px solid #e4e4e4;                
+    }
+    #searchPanel .btn_close{
+        position: absolute; right: 60px; top: 35px;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent;
+
+    }
+
+}
+/* tablet */
+
+@media screen and (min-width: 1280px){
+    /* 미디어쿼리로 네스크탑, 패드, 모바일 guide를 설정 */
+
+    /* header 만드는순서 */
+    /* 
+    1. max-guide 설정 margin 0 auto로 가운데
+    h1, sideBox = position: absolute. 좌,우 0을 입력하여 치우기
+    2. nav에 li들은 text-align:center(nav, ul)의 영향을 받기위해 display: inline-block
+    */
+
+    /* guid가 설정되어있는 page라면 설정된 guid 값 안에 가두어주고 시작
+    전체를 다쓰는 page라면 padding을 값을 계산해준다 */
+    .mui,
+    header .gnbContainer .btn_close{
+        display: none;
+    }
+    header > div,
+    .shopContainer,
+    .textureContainer .bx-wrapper,
+    .listContainer > div:first-of-type,
+    .inquiryContainer, .paymentContainer,
+    .termsContainer, .returnContainer,
+    .privacyCantainer, .magazineContainer,
+    .collectionContainer div,
+    .placeListContainer > div ul,
+    .storiesListContainer > div ul,
+    .placeContainerC > div:not(:nth-of-type(1)),
+    .storiesContainerC > div,
+    [class^='care'] div,[class^='myCos'],
+    .missionContainerB > p,
+    .missionContainerB .careInfotxt,
+    .placeContainerA div, .placeContainerB div, 
+    .myChangeContainer, .cartViewContainer form,
+    .orderContainer, .storeFindContainer{
+        width: 92%; margin: 0 auto;
+    }
+
+    /* header영역은 상단에 고정, 제일 위쪽으로 덮임, 넓이를 화면 전체사용 */
+    header{
+        position: fixed; left: 0; top: 0; z-index: 10; width: 100%;
+        cursor: default;
+    }
+    header.active{
+        background-color: rgba(0,0,0,0.3);
+    }
+    header.blackTheme{
+        background-color: #ffffff;
+    }
+    header:hover,
+    header.active:hover{
+        background-color: #f3f3f3;
+    }
+     /* header배경, hpver시 gnbContainer가 open된 배경 */
+    header > div.whiteTheme .gnbContainer{
+        color: white;
+    }
+    header:hover > div.whiteTheme .gnbContainer{
+        color: #4c4c4c;
+    }
+    /* gnbContainer 텍스트 컬러 */
+    
+
+    header > ul.rollingBanner{ 
+        background-color: #000000; padding: 10px 0; height: 16px;
+        overflow-y: hidden; position: relative;
+    }
+    header > ul.rollingBanner li{
+        position: absolute; width: 100%;
+        color: #ffffff; font-weight: 200; font-family: karla; text-transform: uppercase; 
+        text-align: center; opacity: 0; top: -16px; line-height: 36px;
+        transition-property: opacity, top; transition-duration: 0.5s, 0.75s;
+        transition-timing-function: ease-out, ease-in;
+    }
+    header > ul.rollingBanner li.active{
+        opacity: 1; top: 0;
+    }
+    /* 쌤이 짜주신 js 보면서 다시 공부.. 어려운 부분임.. */
+
+
+    header > div{
+        position: relative; padding: 45px 0;
+    }
+     /* 배치하기 위해 position:relative
+     header의 양쪽 패딩값이 4%인데 %로 계산하면 계속 값을 가져가야하니
+     max-width(guide)를 주어 가두고 margin 0 auto 중앙정렬,
+     header의 위아래 padding값도 동일하게 적용 */
+    header > div h1{
+        width: 121px; line-height: 39px;
+    }
+    /* h1 로고의 넓이값 설정, 중앙정렬  - 로고가 들어갈 공간을 제공 */
+
+    header > div h1 a{
+        display: block; text-indent: -9999px;
+        background: no-repeat center / contain;
+    }
+    /* h1 로고를 가진 a태그의 속성값들 입력 */
+    header > div:not(.whiteTheme) h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    header:hover > div:not(.whiteTheme) h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    header > div.whiteTheme h1 a{
+        background-image: url('../images/logo_white.png');
+    }
+    header:hover > div.whiteTheme h1 a{
+        background-image: url('../images/logo_black.png');
+    }
+    /*화이트테마일 때의 로고 속성  */
+
+    header > div h1,
+    header > div .gnbContainer .btn_close,
+    header > div .sideContainer{
+        position: absolute;
+        top: 45px;
+    }
+    /* top에서 45px 떨어진 곳에  h1 , closeButton, sideContainer를 배치 
+    자유롭운 배치하기 위해 position:absolute 부모인 div가 relative를 가지고있음*/
+    
+    header > div h1{
+        left: 0; z-index: 1000;
+    } 
+    /* h1로 좌측사이드로 이동*/
+
+    header > div .gnbContainer{
+        max-width: 1230px; margin: 0 auto; display: flex !important; justify-content: space-between;
+        text-align: center; font-weight: 300; align-content: flex-start;
+        padding-left: 130px;
+    }
+    /* gnb 값들 설정된 넓이값 1230안에 중앙정렬,  .... 잘 모르겠습니다..*/
+      
+    header > div .gnbContainer ul{
+        width: 25%; text-align: left; font-size: 20px; font-weight: 300;
+    }
+    /* ul의 갯수가 4개 넓이 안에서 똑같이
+     나눠가지려면 100/4해서 25%씩 넓이가짐. 글자들은 왼족정렬 */
+    header > div .gnbContainer ul > li{
+        line-height: 40px;
+    }
+    /* h1로고의 가운데를 중심으로 중앙정렬 되어야하기때문의 로고 높이인 40px를 line-height 가짐 */
+
+    header > div .gnbContainer ul > li ol{
+        display: none; color: #878787;
+    }
+    header:hover > div .gnbContainer ul > li ol{
+        display: block;
+    }
+    /* header가 hover시 ol도 보여져야함으로 숨겨짐 */
+
+    header > div .sideContainer:hover #searchPanel .btn_close{
+        position: absolute; right: 15px;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; box-sizing: border-box;
+    }
+    /* closeButton 지유배치위해 position:absolute 맨오른족에서 15px떨어진 곳 위치
+        텍스트 숨김, buttonImg로 교체 */
+    header > div .sideContainer{
+        right: 0; line-height: 40px;
+    }
+    /* 오른쪽으로 보낸 후 로고높이 40에 따른 중앙정렬*/
+
+    header > div .sideContainer > *{
+        display: inline-block; vertical-align: middle;
+    }
+    /* input과 a태그는 inline 속성이므로 할 수 있는게 없음 속성을 변경해주고
+    세개의 아이콘들 로고를 기준으로 수직정렬(vertical-align) */
+    header div .sideContainer > *:not(:first-child){
+        margin-left: 25px;
+    }
+    /* 전체 아이콘 중 첫번째 아이콘을 제외하고 25px씩 민다 - 아이콘들 사이의 간격 */
+
+    header div .sideContainer input{
+        width: 16px; height: 16px; text-indent: -9999px;
+        border-style: none; box-sizing: border-box; background-color: transparent;
+        background-repeat: no-repeat; background-position: center;
+    }
+    /* input(아이콘)들 type='button'의 크기. 모양 설정으로 자리 만듦 */
+
+    header div .sideContainer input[type='button']:nth-of-type(1){
+        background-image: url('../images/bul_search.png');
+    }
+    header:hover div .sideContainer input[type='button']:nth-of-type(1){
+         background-image: url('../images/bul_searchBlack.png');
+    }
+    header div .sideContainer input[type='button']:nth-of-type(2){
+        background-image: url('../images/bul_cart.png');
+    }
+    header:hover div .sideContainer input[type='button']:nth-of-type(2){
+        background-image: url('../images/bul_cartBlack.png');
+    }
+    /* 위의 만들어진 자리안에 아이콘 이미지 적용 
+        hover시 gnbContainer가 open되면 아이콘 색상도 변경*/
+
+    header div .sideContainer a{
+        background: url('../images/bul_my.png') no-repeat center;
+        width: 16px; height: 16px; text-align: left;
+    }
+    header:hover div .sideContainer a{
+        background: url('../images/bul_myBlack.png') no-repeat center;
+        width: 16px; height: 16px; text-align: left;
+    }
+    /* 아이콘 크기, 모양 속성설정으로 자리 마련 */
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(1){
+        background-image: url('../images/bul_searchBlack.png');
+    }
+    header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(2){
+        background-image: url('../images/bul_cartBlack.png');
+    }
+    header div:not(.whiteTheme) .sideContainer a{
+        background: url('../images/bul_myBlack.png') no-repeat center;
+        width: 16px; height: 16px; text-align: left;
+    }
+
+    header div .sideContainer .mui{
+        display: none;
+    }
+    /* 테블릿과 모바일에서 사용되는 영역이므로 none상태 */
+
+    footer{
+        padding-top: 50px; background-color: #ffffff;
+        border-top: 1px solid #e4e4e4; font-size: 13px;
+    }
+    /* footer영역은 원래 width 100%를 가짐 
+       색상, 위치 조정 */
+
+    footer > div:first-of-type{
+        margin-bottom: 50px;
+    }
+    /* 첫번째 div가 바깥쪽 아래로 50px을 민다 */
+
+    footer > div:first-of-type > a{
+        width: 40%; display: block; margin: 0 auto 50px;
+        border: 1px solid #e4e4e4; text-align: center;
+        padding: 10px 0; font-weight: 300;
+    }
+    /* 첫번째 div의 a태그가 40%의 넓이를 가짐, 중앙위치, 아래로 50px 밀림
+        border로 감싸짐, 안쪽여백으로 padding 10px씩 가짐  */
+
+    footer > div:first-of-type ul{
+        max-width: 1660px; margin: 0 auto; 
+    }
+    /* 첫번째 div안의 ul이 max-width안에 중앙정렬 */
+
+    footer > div:first-of-type ul:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-of-type ul li{
+        float: left; width: 20%; 
+    }
+    /* 첫번째 div안에 ul의 li들이 넓이 20%가짐 한줄로 정렬 */
+
+    footer > div:first-of-type ul li a{
+        display: block; text-align: center; font-weight: 500;
+    } 
+    /* 첫번째 div안에 ul의 lu안에 a태그들이 block속성으로 변경되어 중앙정렬*/
+
+    footer div:nth-of-type(2){
+        background-color: #f9f9f9; position: relative;
+        padding: 50px 7.8% 60px;
+    }
+    /* 두번째 div를 위로 올려 덮기 위해서 position:relative를 하여 배치
+        여백으로 padding을 가짐 */
+
+    footer div p{
+        color: #878787; font-weight: 300; line-height: 18px;
+    }
+    /* 모든 div안에 p태그 텍스트 속성 */
+    footer div:nth-of-type(2) h3{
+        display: none;
+    }
+    footer div:nth-of-type(2) > p{
+        margin-bottom: 40px;
+    }
+    /* 두번째 div안에 직계의 p가 바깥쪽 아래로 40px을 민다. */
+    footer div:nth-of-type(2) div > p{
+        text-align: center;
+    }
+    /* 두번째 div안에 직계 p태그 중앙정렬 사이즈 13px */
+    footer div:nth-of-type(2) div ul{
+        position: absolute; right: 7.8%; bottom: 60px;
+    } 
+    footer div:nth-of-type(2) div ul li{
+        display: inline-block; text-indent: -9999px;
+        width: 25px; height: 25px; background: no-repeat center;    
+    }
+    footer div:nth-of-type(2) div ul li:not(:first-child){
+        margin-left: 8px;
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(1){
+        background-image: url('../images/bul_kakao.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(2){
+        background-image: url('../images/bul_pinter.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(3){
+        background-image: url('../images/bul_facebook.png');
+    }
+    footer div:nth-of-type(2) div ul li:nth-of-type(4){
+        background-image: url('../images/bul_spotify.png');
+    }
+
+    /* #cartPanel > div .emptyComment{ 
+        width: 31.25%; margin: -460px auto; color: #4c4c4c; font-size: 18px; font-weight: 400;
+    } */
+    /* 중앙에 오게하는것... */
+
+    #cartPanel{
+        position: fixed; top: 35px; right: 0;  width: 31.25%; height: 100%;
+        background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
+    }
+    /* 패널이 딸려 내려오지 않게 fixed로 고정
+    z-index를 사용하여 맨 위로 오게끔.. */
+
+    #cartPanel > div{
+        position: relative;
+    }
+    #cartPanel > div h2{
+        padding: 50px 0 35px;
+        text-align: center; font-size: 20px; font-weight: 300; color: #4c4c4c; 
+        border-bottom: 1px solid #e4e4e4;        
+    }
+    #cartPanel > div .btn_close{
+        display: block; top: 35px; right: 0; position: absolute;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    #cartPanel > div ul{
+        max-height: 340px; overflow-y: scroll; padding-top: 50px;
+    }
+    /* 스크롤은 이렇게 해야함.. */
+
+    #cartPanel > div ul li{
+        padding-bottom: 40px;
+    }
+    #cartPanel > div ul li figure{
+        display: flex; 
+    }
+    #cartPanel > div ul li figure figcaption{
+        float: left; padding: 25px 0 0 30px; font-size: 18px;
+    }
+    #cartPanel > div ul li figure figcaption h3{
+        font-weight: 300; color: #4c4c4c; 
+        padding-bottom: 35px;
+    }
+    #cartPanel > div ul li figure figcaption dl::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div ul li figure figcaption dl{
+        color: #878787; line-height: 25px;
+    }
+    #cartPanel > div ul li figure figcaption dl dt{
+        float: left; font-weight: 400;
+    }
+    #cartPanel > div ul li figure figcaption dl dd{
+        margin-left: 210px; font-weight: 300;
+    }
+    #cartPanel > div > dl::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div > dl{
+        font-size: 18px; line-height: 25px; 
+    }
+    #cartPanel > div > dl dt{
+        float: left; color: #4c4c4c;
+    }
+    #cartPanel > div > dl dd{
+        color: #878787; width: 20%; margin-left: auto;
+    }
+    #cartPanel > div > dl dd:nth-of-type(2){
+        padding-bottom: 70px; 
+    }
+    #cartPanel > div > dl dd:nth-of-type(3){
+        margin-bottom: 70px;
+    }
+    /* 원래는 200px인데 잘려서 줄였는데 맞나요..ㅜ */
+    #cartPanel > div a:nth-of-type(1){
+        display: block; max-width: 325px; margin: 0 auto 25px; padding: 10px 0;
+        text-align: center; color: #4c4c4c;
+        border: 1px solid #4c4c4c;
+    }
+    #cartPanel > div a:nth-of-type(2){
+        display: block; text-align: center; color: #4c4c4c;
+    }
+
+    /* t순서대로 정렬 위해 먼저 안보이게 숨김 */
+
+    #searchPanel{
+        position: fixed; width: 100%; left: 0; top: 35px; font-weight: 300;
+        background-color: #f3f3f3; padding: 70px 0; z-index: 1000;
+    }
+    #searchPanel input{
+        position: relative;  
+    }
+    #searchPanel input[type='search']{
+        display: block; max-width: 615px; margin: 0 auto; padding: 30px 0; width: 32%;
+        border-style: none; background-color: transparent;
+        text-align: center;  font-size: 18px; color: #4c4c4c; font-weight: 300; 
+        border-bottom: 1px solid #e4e4e4;                
+    }
+    #searchPanel .btn_close{
+        position: absolute; right: 60px; top: 35px;
+        background: url('../images/bul_closebtn.png') no-repeat center / 12px;
+        border-style: none; background-color: transparent;
+
+    }
+
+}
+/* desktop 영역 */
