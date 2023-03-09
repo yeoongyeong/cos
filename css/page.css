@@ -191,7 +191,10 @@
     }
     .listContainer > div:first-of-type span select{
         border: none; background-color: transparent;
-        text-align: right; color: #878787; font-weight: 400; font-size: 11px;
+        color: #878787; font-weight: 400; font-size: 11px;
+    }
+    .listContainer > div:first-of-type span option{
+        text-align: right;
     }
     .listContainer > ul{
         flex-flow: row wrap; margin-bottom: 30px;
