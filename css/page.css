@@ -186,15 +186,12 @@
         font-size: 11px; font-weight: 300; display: inline-block;
     }
     .listContainer > div:first-of-type span{
-        display: block; float: right;
+        display: block; float: right; text-align: right;
         font-weight: 300;
     }
     .listContainer > div:first-of-type span select{
         border: none; background-color: transparent;
         color: #878787; font-weight: 400; font-size: 11px;
-    }
-    .listContainer > div:first-of-type span option{
-        text-align: right;
     }
     .listContainer > ul{
         flex-flow: row wrap; margin-bottom: 30px;
