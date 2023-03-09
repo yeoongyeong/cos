@@ -190,7 +190,7 @@
         font-weight: 300;
     }
     .listContainer > div:first-of-type span select{
-        border: none;
+        border: none; text-align: start;
         background-color: transparent;
         text-align: right; color: #878787; font-weight: 400; font-size: 11px;
     }
