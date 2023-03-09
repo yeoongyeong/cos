@@ -187,10 +187,10 @@
     }
     .listContainer > div:first-of-type span{
         display: block; float: right;
-        font-weight: 300;
+        font-weight: 300; text-align: right;
     }
     .listContainer > div:first-of-type span select{
-        border: none; text-align: start;
+        border: none; 
         background-color: transparent;
         text-align: right; color: #878787; font-weight: 400; font-size: 11px;
     }
