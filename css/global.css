@@ -4,7 +4,7 @@
 body{
     background-color: #ffffff;
 }
-body *, 
+body, 
 body:not(.rollingBanner),
 [class$=Container] input::placeholder,
 [class^='sign'] input[type="date"],
