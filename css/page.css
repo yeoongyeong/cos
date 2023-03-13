@@ -425,10 +425,7 @@
     #guidePanel ul li{
         background-image: url('../images/bul_arrow.png'); 
         background-size: 6px 10px;
-    }
-    #guidePanel ul li:active + table{
-        display: block;
-    }   
+    }  
     #guidePanel ul li table,
     #guidePanel ul li table caption,
     #guidePanel ul li dl{
@@ -436,8 +433,8 @@
     }
     #guidePanel ul li,
     #guidePanel ul li:last-of-type a.active~table,
-    #guidePanel ul li a.active+table,
-    #guidePanel ul li a.active+dl{
+    #guidePanel ul li.active+table,
+    #guidePanel ul li.active+dl{
         display: block;
     }
     #guidePanel ul li table{
