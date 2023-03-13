@@ -431,9 +431,9 @@
     #guidePanel ul li dl{
         display: none;
     }
-    #guidePanel ul li,
-    #guidePanel ul li:last-of-type a.active~table,
-    #guidePanel ul li.active+table,
+/*     
+    #guidePanel ul li.active+table, */
+    #guidePanel ul li:last-of-type.active~table,
     #guidePanel ul li.active+dl{
         display: block;
     }
