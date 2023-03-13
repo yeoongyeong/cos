@@ -426,7 +426,7 @@
         background-image: url('../images/bul_arrow.png'); 
         background-size: 6px 10px;
     }
-    #guidePanel ul li:active{
+    #guidePanel ul li:active + table{
         display: block;
     }   
     #guidePanel ul li table,
