@@ -1415,7 +1415,7 @@
         font-size: 13px; font-weight: 500;
     }
     .orderContainer > div:nth-of-type(1) ul li .btn_close{
-        display: block; right: 0px; top: 410px; position: absolute; width: 11px; height: 12px;
+        display: block; right: 0px; top: 730px; position: absolute; width: 11px; height: 12px;
         background: url('../images/bul_closebtn.png') center / contain no-repeat transparent;
         border-style: none; box-sizing: border-box;
     }
