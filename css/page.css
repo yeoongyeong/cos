@@ -1322,7 +1322,7 @@
         content: ''; display: block; clear: both;
     }
     .cartViewContainer form fieldset ul li figure figcaption{
-        float: left; max-width: 300px; width: 100%; padding-top: 15px;
+        float: left; width: 100%; padding-top: 15px;
         position: relative; font-size: 11px;
     }
     .cartViewContainer form fieldset ul li figure figcaption h3{
@@ -1333,7 +1333,7 @@
         content: ''; display: block; clear: both;
     }
     .cartViewContainer form fieldset ul li figure figcaption dl{
-        line-height: 50px; color: #878787; max-width: 250px;
+        line-height: 50px; color: #878787; 
     }
     .cartViewContainer form fieldset ul li figure figcaption dl dt{
         float: left; font-weight: 500; width: 50%;
