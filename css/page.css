@@ -1903,7 +1903,7 @@
         display: block; padding: 20px; border: 1px solid #878787; box-sizing: border-box;    
         font-size: 18px; font-weight: 300; margin: 0 15% 50px; order: 2s;
     }
-    .detailContainer aside div:nth-of-type(2) a:hover{
+    .detailContainer aside div:nth-of-type(2) a:last-of-type:hover{
         background-color: gray;
     }
     .detailContainer aside div:nth-of-type(2) a span:nth-of-type(2),
@@ -2480,11 +2480,11 @@
         margin-bottom: 35px;
     }
     .storeFindContainer > div{
-        margin-bottom: 70px; width: 100%; height: 100%; max-height: 740px;
+        margin-bottom: 70px;  height: 480px;
     }
-    /* .storeFindContainer > div #map{
-        
-    } */
+    .storeFindContainer > div #map{
+        width: 100%; height: 100%; max-height: 740px;
+    }
     .storeFindContainer > div input{
         display: block; width: 100%;
         border-style: none; border-bottom: 1px solid #e4e4e4; padding: 20px;
