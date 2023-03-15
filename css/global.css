@@ -529,6 +529,9 @@ a{
         display: inline-block; text-indent: -9999px;
         width: 25px; height: 25px; background: no-repeat center;    
     }
+    footer div:nth-of-type(2) div ul li a{
+        display: block;
+    }s
     footer div:nth-of-type(2) div ul li:not(:first-child){
         margin-left: 8px;
     }
@@ -866,6 +869,9 @@ a{
     footer div:nth-of-type(2) div ul li{
         display: inline-block; text-indent: -9999px;
         width: 25px; height: 25px; background: no-repeat center;    
+    }
+    footer div:nth-of-type(2) div ul li a{
+        display: block;
     }
     footer div:nth-of-type(2) div ul li:not(:first-child){
         margin-left: 8px;
@@ -1266,6 +1272,9 @@ a{
     footer div:nth-of-type(2) div ul li{
         display: inline-block; text-indent: -9999px;
         width: 25px; height: 25px; background: no-repeat center;    
+    }
+    footer div:nth-of-type(2) div ul li a{
+        display: block;
     }
     footer div:nth-of-type(2) div ul li:not(:first-child){
         margin-left: 8px;
