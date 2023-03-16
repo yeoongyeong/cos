@@ -394,7 +394,7 @@ a{
         border-style: none; background-color: transparent; box-sizing: border-box;
     }
     header > div .gnbContainer > .bottomBox{
-        position: absolute; bottom: 0; left: 0; padding: 0 7.8% 25px;
+        position: absolute; bottom: 0; left: 0; padding: 0 7.8% 50px;
         width: 100%; box-sizing: border-box;
     }
     header > div .gnbContainer > .bottomBox a{
@@ -750,7 +750,7 @@ a{
         border-style: none; background-color: transparent; box-sizing: border-box;
     }
     header > div .gnbContainer > .bottomBox{
-        position: absolute; bottom: 0; left: 0; padding: 0 7.8% 50px;
+        position: absolute; bottom: 0; left: 0; padding: 0 7.8% 70px;
         width: 100%; box-sizing: border-box;
     }
     header > div .gnbContainer > .bottomBox a{
