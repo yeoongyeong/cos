@@ -424,7 +424,7 @@ a{
         position: relative; cursor: default; margin-bottom: 4.5vh;
     }
     header > div .gnbContainer ul > li:after{
-        content: url("../images/bul_arrow02.png"); position: absolute; right: 0; top: 0;
+        content: url("../images/bul_arrow.png"); position: absolute; right: 0; top: 0;
         transition: transform 0.35s ease-out; transform: rotate(0deg); 
     }
     header > div .gnbContainer ul > li:hover:after{
@@ -776,7 +776,7 @@ a{
         position: relative; cursor: default; margin-bottom: 35px;
     }
     header > div .gnbContainer ul > li:after{
-        content: url("../images/bul_arrow02.png"); position: absolute; right: 0; top: 0;
+        content: url("../images/bul_arrow.png"); position: absolute; right: 0; top: 0;
         transition: transform 0.35s ease-out; transform: rotate(0deg); 
     }
     header > div .gnbContainer ul > li:hover:after{
