@@ -418,8 +418,8 @@
         content: url('../images/bul_arrow.png'); right: 0;
         transition: transform 0.35s ease-in-out; transform: rotate(0deg); display: inline-block;
     }  
-    #guidePanel ul li.active:after + table{
-        transform: rotate(180deg); display: block;
+    #guidePanel ul li.active:after{
+        transform: rotate(180deg);
     }
     #guidePanel ul li table,
     #guidePanel ul li table caption,
