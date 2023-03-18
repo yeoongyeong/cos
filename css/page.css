@@ -428,8 +428,8 @@
     }
 /*   
     #guidePanel ul li.active+table, */
-    #guidePanel ul li.active~table,
-    #guidePanel ul li.active+dl{
+    #guidePanel ul li.active + table,
+    #guidePanel ul li.active + dl{
         display: block;
     }
     #guidePanel ul li table{
@@ -3793,7 +3793,7 @@
 }
 .signUpContainer form fieldset:not(:first-child) div ul li{
     margin-bottom: 20px; padding-left: 15px;
-    background: url("../images/bul_radio.png") no-repeat left center;
+    background: url("../images/bul_radio.png") no-repeat left top 3px;
 }
 .signUpContainer form fieldset:nth-of-type(2) div:nth-of-type(2) input[type='radio'] + label,
 .signUpContainer form fieldset:nth-of-type(3) div:nth-of-type(2) input[type='radio'] + label{
