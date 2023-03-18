@@ -428,7 +428,7 @@
     }
 /*   
     #guidePanel ul li.active+table, */
-    #guidePanel ul li.active + table,
+    #guidePanel ul li.active~table,
     #guidePanel ul li.active + dl{
         display: block;
     }
