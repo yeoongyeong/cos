@@ -1147,7 +1147,7 @@
     [class^='stories'] .rimgLtxt div,
     .missionContainerB .limgRtxt div,
     .missionContainerB .rimgLtxt div{
-        align-self: center; max-width: 768px; margin: 0 auto 0;
+        align-self: center; max-width: 768px; margin: 0 auto 50px;
         text-align: left; font-size: 18px; line-height: 30px; font-weight: 400;
     }
     .placeContainerA .rimgLtxt div,
