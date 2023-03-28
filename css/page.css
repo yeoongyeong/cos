@@ -4038,7 +4038,10 @@
     display: none; 
 }
 .myCosContainer .serviceMenu > div ul li input{
-    border-style: none; text-align: left;
+    border-style: none; text-align: left; display: block;
+}
+.myCosContainer .serviceMenu > div ul li input[type='date']{
+    appearance: none; width: 100%;
 }
 .myCosContainer .serviceMenu > div ul li input::placeholder{
     color: #4c4c4c; font-size: 18px; font-weight: 400;
