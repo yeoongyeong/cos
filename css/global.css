@@ -13,6 +13,9 @@ body:not(.rollingBanner),
 #searchPanel input{
     font-family: 'Raleway';
 }
+input[type='date']{
+    font-family: inherit;
+}
 /* font를 항상 먼저 불러와서 값을 입력한다 */
 body * strong,
 body * span{
