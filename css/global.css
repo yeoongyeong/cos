@@ -586,11 +586,11 @@ a{
         width: 50%;
     }
     #cartPanel > div ul li figure figcaption{
-        float: left; padding: 15px 0 0 15px; font-size: 11px;
+        float: left; width: 50%; padding: 10px 3%; font-size: 11px;
         font-weight: 400;
     }
     #cartPanel > div ul li figure figcaption h3{
-         color: #4c4c4c; 
+        color: #4c4c4c; 
         padding-bottom: 20px;
     }
     #cartPanel > div ul li figure figcaption dl::after{
@@ -603,7 +603,7 @@ a{
         float: left; font-weight: 400;
     }
     #cartPanel > div ul li figure figcaption dl dd{
-        margin-left: 60px; font-weight: 300;
+        text-align: right; font-weight: 300;
     }
     #cartPanel > div > dl::after{
         content: ''; display: block; clear: both;
@@ -893,7 +893,7 @@ a{
     }
 
     #cartPanel{
-        position: fixed; top: 35px; right: 0;  width: 65%; height: 100%;
+        position: fixed; top: 35px; right: 0; height: 100%;
         background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
     }
     /* 패널이 딸려 내려오지 않게 fixed로 고정
@@ -1117,8 +1117,8 @@ a{
 
     header > div .gnbContainer{
         max-width: 1230px; margin: 0 auto; display: flex !important; justify-content: space-between;
-        text-align: center; font-weight: 300; align-content: flex-start;
-        padding-left: 130px;
+        text-align: center; font-weight: 300; align-content: flex-start; width: 64%;
+
     }
     /* gnb 값들 설정된 넓이값 1230안에 중앙정렬,  .... 잘 모르겠습니다..*/
       
@@ -1135,7 +1135,7 @@ a{
     header > div .gnbContainer ul > li ol{
         display: none; color: #878787;
     }
-    header:hover > div .gnbContainer ul > li ol{
+    header > div .gnbContainer:hover ul > li ol{
         display: block;
     }
     /* header가 hover시 ol도 보여져야함으로 숨겨짐 */
@@ -1301,14 +1301,14 @@ a{
     /* 중앙에 오게하는것... */
 
     #cartPanel{
-        position: fixed; top: 35px; right: 0;  width: 31.25%; height: 100%;
+        position: fixed; top: 36px; right: 0;  max-width: 600px; width: 100%; height: 100%;
         background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
     }
     /* 패널이 딸려 내려오지 않게 fixed로 고정
     z-index를 사용하여 맨 위로 오게끔.. */
 
     #cartPanel > div{
-        position: relative;
+        position: relative; 
     }
     #cartPanel > div h2{
         padding: 50px 0 35px;
@@ -1332,7 +1332,7 @@ a{
         display: flex; 
     }
     #cartPanel > div ul li figure figcaption{
-        float: left; padding: 25px 0 0 30px; font-size: 18px;
+        float: left; padding: 25px 5%; font-size: 18px;
     }
     #cartPanel > div ul li figure figcaption h3{
         font-weight: 300; color: #4c4c4c; 
