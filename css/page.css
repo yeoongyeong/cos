@@ -3509,12 +3509,12 @@
     padding-bottom: 10px;
 }
 .detailContainer aside .descriptList li:nth-of-type(2) a{
-    text-align: right; display: none;
+    text-align: right; 
     text-decoration: underline solid#e4e4e4; text-underline-offset: 3px;
     color: #4c4c4c; font-size: 14px; font-weight: 300;
 }
 .detailContainer aside .descriptList li:nth-of-type(2):hover a{
-    display: block; 
+    display: block; width: 13%; margin-left: auto;
 }
 .productRecommend h2{
     text-align: center;
