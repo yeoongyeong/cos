@@ -176,7 +176,7 @@
         padding: 75px 0 20px; 
     }
     .listContainer > div:first-of-type h2{
-        font-size: 11px; font-weight: 300; display: inline-block;
+        font-size: 11px; font-weight: 300; float: left;
     }
     .listContainer > div:first-of-type span{
         display: block; float: right; text-align: right;
@@ -1748,7 +1748,7 @@
         padding: 178px 0 50px; 
     }
     .listContainer > div:first-of-type h2{
-        font-size: 16px; font-weight: 300; display: inline-block;
+        font-size: 16px; font-weight: 300; float: left;
     }
     .listContainer > div:first-of-type span{
         display: block; float: right;
@@ -1859,7 +1859,7 @@
         position: relative;
     }
     .detailContainer aside div:nth-of-type(2) > a:first-of-type{
-        position: absolute; text-align: center; bottom: 120px; left: 330px;
+        position: absolute; display: block; width:100%; bottom: 120px;
         font-size: 13px; font-weight: 300; order: 1;
         text-underline-offset: 3px; text-decoration: underline solid #e4e4e4;
     }
@@ -3300,7 +3300,7 @@
     padding: 178px 0 50px; 
 }
 .listContainer > div:first-of-type h2{
-    font-size: 16px; font-weight: 300;
+    font-size: 16px; font-weight: 300; float: left;
 }
 .listContainer > div:first-of-type span{
     display: block; float: right;
@@ -3330,9 +3330,12 @@
 .listContainer > ul > li:nth-child(1) figure{
     display: flex; 
 }
+.listContainer > ul > li:nth-child(1) figure > a{
+    width: 50%;
+}
 /* 사용방법과 이유  */
 .listContainer > ul > li:nth-child(1) figure figcaption{
-    padding: 150px 6.25% 0; width: 50%;
+    padding: 8vw 6.25% 0; width: 50%;
     box-sizing: border-box;
 }
 .listContainer > ul > li:nth-child(1) figure figcaption a{
@@ -3340,7 +3343,7 @@
 }
 
 .listContainer > ul > li:nth-child(1) figure figcaption dl{
-    margin-bottom: 110px;
+    margin-bottom: 5.7vw;
 }
 .listContainer > ul > li:nth-child(1) figure figcaption dl dt{
     font-size: 18px; font-weight: 500;
