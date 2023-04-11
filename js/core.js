@@ -75,8 +75,6 @@ function detailScroll(target){
     var scrollLock = $(".detailContainer ul").height() - $(target).height(); // 우측면 aside의 높이 구하기.
 
     $(window).scroll(function(){ // browser에 scroll이 작동 되었을 때
-        console.log(scrollLock);
-        console.log($(this).scrollTop());
         if($(this).scrollTop() >= scrollLock){ // 만약 browser의 scrollTop(스크롤막대의윗면)이 aside 높이의 절반보다 커지면
             $(target).addClass("lock"); // aside에 lock 걸기
         }else{ // 그 외 나머지 상황엔
