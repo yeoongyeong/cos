@@ -1,6 +1,4 @@
-/* global CSS는 페이지 전체를 다루는 부분이다(all use part)
-    모든 페이지에서 사용되는 공통된 영역을 담아준다
-    (header, footer..등..) */
+
 body{
     background-color: #ffffff;
 }
@@ -16,7 +14,6 @@ body:not(.rollingBanner),
 input[type='date']{
     font-family: inherit;
 }
-/* font를 항상 먼저 불러와서 값을 입력한다 */
 body * strong,
 body * span{
     display: block;
@@ -33,13 +30,10 @@ input[type='checkbox']{
 [id$='Panel'].active{
     display: block;
 }
-/* class속성값이 panel로 끝나면 적용된다
-    이렇게 묶을 수 있게 코드를 짤때 class 끝을 맞춰준다 */
 
 #cartPanel > div .emptyComment{
     display: none;
 }
-/* 코드 작성시 panel부분이 다 열려있으면 복잡하므로 class='activ'를 달아 작업한다 */
 
 ol,ul{
     list-style: none;
@@ -60,11 +54,12 @@ a{
 [class$='Recommend'] img{
     width: 100%; display: block;
 }
-/* 전체영역에서 쓰이는 컬러부분*/
+#map iframe{
+    width: 100%;
+}
 .chooseColor li{
     width: 15px; height: 15px; display: inline-block;
 }
-/* 텍스트 삭제, 넓이 높이 규격잡고, inline-block으로 변경하여 옆으로 붙을 수 있게함 */
 
 .chooseColor li.black{
     background-color: black;
@@ -310,11 +305,6 @@ a{
     background: url('../images/colorChip_wDress01.png') no-repeat center;
 }
 
-#map iframe{
-    width: 100%;
-}
-/* all Use Part */ 
-
 @media screen and (max-width: 767px){
     .mui{
         display: block;
@@ -345,7 +335,6 @@ a{
     .orderContainer, .storeFindContainer, .placeContainerC .bx-wrapper figure{
         width: 92%; margin: 0 auto;
     }
-
     header > ul.rollingBanner{ 
         display: none;
     }
@@ -478,7 +467,6 @@ a{
         background-image: url('../images/bul_muiBlack.png');
     }
 
-
     footer{
         padding-top: 30px; background-color: #ffffff;
         border-top: 1px solid #e4e4e4; font-size: 11px;
@@ -489,7 +477,6 @@ a{
         border: 1px solid #e4e4e4; text-align: center;
         padding: 10px 0; font-weight: 300;
     }
-
     footer > div:first-of-type ul li{
      margin-bottom: 20px;
     }
@@ -554,14 +541,10 @@ a{
         background-image: url('../images/bul_spotify.png');
         background-size: 25px;
     }
-
     #cartPanel{
         position: fixed; top: 0; width: 100%; max-height: 750px; height: 100%;
         background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
     }
-    /* 패널이 딸려 내려오지 않게 fixed로 고정
-    z-index를 사용하여 맨 위로 오게끔.. */
-
     #cartPanel > div{
         position: relative;
     }
@@ -578,8 +561,6 @@ a{
     #cartPanel > div ul{
         max-height: 340px; overflow-y: scroll; padding-top: 20px;
     }
-    /* 스크롤은 이렇게 해야함.. */
-
     #cartPanel > div ul li{
         padding-bottom: 50px;
     }
@@ -625,7 +606,6 @@ a{
     #cartPanel > div > dl dd:nth-of-type(3){
         margin-bottom: 20px;
     }
-    /* 원래는 200px인데 잘려서 줄였는데 맞나요..ㅜ */
     #cartPanel > div a:nth-of-type(1){
         display: block; max-width: 325px; margin: 0 auto 25px; padding: 10px 0;
         text-align: center; color: #4c4c4c; font-size: 11px; font-weight: 500;
@@ -635,7 +615,6 @@ a{
         display: block; text-align: center; color: #4c4c4c; font-weight: 400;
         font-size: 11px;
     }
-    
     #searchPanel{
         position: fixed; width: 100%; left: 0; top: 0;
         background-color: #f3f3f3; z-index: 1000;
@@ -657,7 +636,6 @@ a{
     }
 
 }
-/* mobile*/
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .mui{
@@ -769,8 +747,7 @@ a{
        margin-bottom: 30px;
     }
     header > div .gnbContainer > .bottomBox a:nth-of-type(2){
-        background: url("../images/bul__info.png") left top no-repeat;
-       
+        background: url("../images/bul__info.png") left top no-repeat;       
     }
     header > div .gnbContainer ul:first-child{
         padding-top: 130px;
@@ -833,7 +810,6 @@ a{
     header div:not(.whiteTheme) .sideContainer input[type='button']:nth-of-type(3){
         background-image: url('../images/bul_muiBlack.png');
     }
-
 
     footer{
         padding-top: 30px; background-color: #ffffff;
@@ -899,14 +875,10 @@ a{
         background-image: url('../images/bul_spotify.png');
         background-size: 25px;
     }
-
     #cartPanel{
         position: fixed; top: 35px; right: 0; height: 100%;
         background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
     }
-    /* 패널이 딸려 내려오지 않게 fixed로 고정
-    z-index를 사용하여 맨 위로 오게끔.. */
-
     #cartPanel > div{
         position: relative;
     }
@@ -923,7 +895,6 @@ a{
     #cartPanel > div ul{
         max-height: 340px; overflow-y: scroll; padding-top: 50px;
     }
-    /* 스크롤은 이렇게 해야함.. */
 
     #cartPanel > div ul li{
         padding-bottom: 40px;
@@ -966,7 +937,6 @@ a{
     #cartPanel > div > dl dd:nth-of-type(3){
         margin-bottom: 50px;
     }
-    /* 원래는 200px인데 잘려서 줄였는데 맞나요..ㅜ */
     #cartPanel > div a:nth-of-type(1){
         display: block; max-width: 325px; margin: 0 auto 25px; padding: 10px 0;
         text-align: center; color: #4c4c4c;
@@ -975,7 +945,6 @@ a{
     #cartPanel > div a:nth-of-type(2){
         display: block; text-align: center; color: #4c4c4c;
     }
-    
     #searchPanel{
         position: fixed; width: 100%; left: 0; top: 35px;
         background-color: #f3f3f3; padding: 70px 0; z-index: 1000;
@@ -997,20 +966,8 @@ a{
     }
 
 }
-/* tablet */
 
 @media screen and (min-width: 1280px){
-    /* 미디어쿼리로 네스크탑, 패드, 모바일 guide를 설정 */
-
-    /* header 만드는순서 */
-    /* 
-    1. max-guide 설정 margin 0 auto로 가운데
-    h1, sideBox = position: absolute. 좌,우 0을 입력하여 치우기
-    2. nav에 li들은 text-align:center(nav, ul)의 영향을 받기위해 display: inline-block
-    */
-
-    /* guid가 설정되어있는 page라면 설정된 guid 값 안에 가두어주고 시작
-    전체를 다쓰는 page라면 padding을 값을 계산해준다 */
     .mui,
     header .gnbContainer .btn_close{
         display: none;
@@ -1035,8 +992,6 @@ a{
     .orderContainer, .storeFindContainer{
         width: 92%; margin: 0 auto;
     }
-
-    /* header영역은 상단에 고정, 제일 위쪽으로 덮임, 넓이를 화면 전체사용 */
     header{
         position: fixed; left: 0; top: 0; z-index: 10; width: 100%;
         cursor: default;
@@ -1051,16 +1006,12 @@ a{
     header.active:hover{
         background-color: #f3f3f3;
     }
-     /* header배경, hpver시 gnbContainer가 open된 배경 */
     header > div.whiteTheme .gnbContainer{
         color: white;
     }
     header:hover > div.whiteTheme .gnbContainer{
         color: #4c4c4c;
     }
-    /* gnbContainer 텍스트 컬러 */
-    
-
     header > ul.rollingBanner{ 
         background-color: #000000; padding: 10px 0; height: 16px;
         overflow-y: hidden; position: relative;
@@ -1075,26 +1026,18 @@ a{
     header > ul.rollingBanner li.active{
         opacity: 1; top: 0;
     }
-    /* 쌤이 짜주신 js 보면서 다시 공부.. 어려운 부분임.. */
-
 
     header > div{
         position: relative; padding: 45px 0;
     }
-     /* 배치하기 위해 position:relative
-     header의 양쪽 패딩값이 4%인데 %로 계산하면 계속 값을 가져가야하니
-     max-width(guide)를 주어 가두고 margin 0 auto 중앙정렬,
-     header의 위아래 padding값도 동일하게 적용 */
     header > div h1{
         width: 121px; line-height: 39px;
     }
-    /* h1 로고의 넓이값 설정, 중앙정렬  - 로고가 들어갈 공간을 제공 */
 
     header > div h1 a{
         display: block; text-indent: -9999px;
         background: no-repeat center / contain;
     }
-    /* h1 로고를 가진 a태그의 속성값들 입력 */
     header > div:not(.whiteTheme) h1 a{
         background-image: url('../images/logo_black.png');
     }
@@ -1107,76 +1050,54 @@ a{
     header:hover > div.whiteTheme h1 a{
         background-image: url('../images/logo_black.png');
     }
-    /*화이트테마일 때의 로고 속성  */
-
     header > div h1,
     header > div .gnbContainer .btn_close,
     header > div .sideContainer{
         position: absolute;
         top: 45px;
     }
-    /* top에서 45px 떨어진 곳에  h1 , closeButton, sideContainer를 배치 
-    자유롭운 배치하기 위해 position:absolute 부모인 div가 relative를 가지고있음*/
     
     header > div h1{
         left: 0; z-index: 1000;
-    } 
-    /* h1로 좌측사이드로 이동*/
-
+    }
     header > div .gnbContainer{
         max-width: 1230px; margin: 0 auto; display: flex !important; justify-content: space-between;
         text-align: center; font-weight: 300; align-content: flex-start; width: 64%;
 
     }
-    /* gnb 값들 설정된 넓이값 1230안에 중앙정렬,  .... 잘 모르겠습니다..*/
-      
     header > div .gnbContainer ul{
         width: 25%; text-align: left; font-size: 20px; font-weight: 300;
     }
-    /* ul의 갯수가 4개 넓이 안에서 똑같이
-     나눠가지려면 100/4해서 25%씩 넓이가짐. 글자들은 왼족정렬 */
     header > div .gnbContainer ul > li{
         line-height: 40px;
     }
-    /* h1로고의 가운데를 중심으로 중앙정렬 되어야하기때문의 로고 높이인 40px를 line-height 가짐 */
-
     header > div .gnbContainer ul > li ol{
         display: none; color: #878787;
     }
     header > div .gnbContainer:hover ul > li ol{
         display: block;
     }
-    /* header가 hover시 ol도 보여져야함으로 숨겨짐 */
-
     header > div .sideContainer:hover #searchPanel .btn_close{
         position: absolute; right: 15px;
         background: url('../images/bul_closebtn.png') no-repeat center / 12px;
         border-style: none; box-sizing: border-box;
     }
-    /* closeButton 지유배치위해 position:absolute 맨오른족에서 15px떨어진 곳 위치
-        텍스트 숨김, buttonImg로 교체 */
     header > div .sideContainer{
         right: 0; line-height: 40px;
     }
-    /* 오른쪽으로 보낸 후 로고높이 40에 따른 중앙정렬*/
 
     header > div .sideContainer > *{
         display: inline-block; vertical-align: middle;
     }
-    /* input과 a태그는 inline 속성이므로 할 수 있는게 없음 속성을 변경해주고
-    세개의 아이콘들 로고를 기준으로 수직정렬(vertical-align) */
     header div .sideContainer > *:not(:first-child){
         margin-left: 25px;
     }
-    /* 전체 아이콘 중 첫번째 아이콘을 제외하고 25px씩 민다 - 아이콘들 사이의 간격 */
 
     header div .sideContainer input{
         width: 16px; height: 16px; text-indent: -9999px;
         border-style: none; box-sizing: border-box; background-color: transparent;
         background-repeat: no-repeat; background-position: center;
     }
-    /* input(아이콘)들 type='button'의 크기. 모양 설정으로 자리 만듦 */
-
     header div .sideContainer input[type='button']:nth-of-type(1){
         background-image: url('../images/bul_search.png');
     }
@@ -1189,9 +1110,6 @@ a{
     header:hover div .sideContainer input[type='button']:nth-of-type(2){
         background-image: url('../images/bul_cartBlack.png');
     }
-    /* 위의 만들어진 자리안에 아이콘 이미지 적용 
-        hover시 gnbContainer가 open되면 아이콘 색상도 변경*/
-
     header div .sideContainer a{
         background: url('../images/bul_my.png') no-repeat center;
         width: 16px; height: 16px; text-align: left;
@@ -1215,68 +1133,49 @@ a{
     header div .sideContainer .mui{
         display: none;
     }
-    /* 테블릿과 모바일에서 사용되는 영역이므로 none상태 */
 
     footer{
         padding-top: 50px; background-color: #ffffff;
         border-top: 1px solid #e4e4e4; font-size: 13px;
     }
-    /* footer영역은 원래 width 100%를 가짐 
-       색상, 위치 조정 */
 
     footer > div:first-of-type{
         margin-bottom: 50px;
     }
-    /* 첫번째 div가 바깥쪽 아래로 50px을 민다 */
-
     footer > div:first-of-type > a{
         width: 40%; display: block; margin: 0 auto 50px;
         border: 1px solid #e4e4e4; text-align: center;
         padding: 10px 0; font-weight: 300;
     }
-    /* 첫번째 div의 a태그가 40%의 넓이를 가짐, 중앙위치, 아래로 50px 밀림
-        border로 감싸짐, 안쪽여백으로 padding 10px씩 가짐  */
-
     footer > div:first-of-type ul{
         max-width: 1660px; margin: 0 auto; 
     }
-    /* 첫번째 div안의 ul이 max-width안에 중앙정렬 */
-
     footer > div:first-of-type ul:after{
         content: ''; display: block; clear: both;
     }
     footer > div:first-of-type ul li{
         float: left; width: 20%; 
     }
-    /* 첫번째 div안에 ul의 li들이 넓이 20%가짐 한줄로 정렬 */
-
     footer > div:first-of-type ul li a{
         display: block; text-align: center; font-weight: 500;
     } 
-    /* 첫번째 div안에 ul의 lu안에 a태그들이 block속성으로 변경되어 중앙정렬*/
 
     footer div:nth-of-type(2){
         background-color: #f9f9f9; position: relative;
         padding: 50px 7.8% 60px;
     }
-    /* 두번째 div를 위로 올려 덮기 위해서 position:relative를 하여 배치
-        여백으로 padding을 가짐 */
-
     footer div p{
         color: #878787; font-weight: 300; line-height: 18px;
     }
-    /* 모든 div안에 p태그 텍스트 속성 */
     footer div:nth-of-type(2) h3{
         display: none;
     }
     footer div:nth-of-type(2) > p{
         margin-bottom: 40px;
     }
-    /* 두번째 div안에 직계의 p가 바깥쪽 아래로 40px을 민다. */
     footer div:nth-of-type(2) div > p{
         text-align: center;
     }
-    /* 두번째 div안에 직계 p태그 중앙정렬 사이즈 13px */
     footer div:nth-of-type(2) div ul{
         position: absolute; right: 7.8%; bottom: 60px;
     } 
@@ -1306,19 +1205,10 @@ a{
         background-image: url('../images/bul_spotify.png');
         background-size: 25px;
     }
-
-    /* #cartPanel > div .emptyComment{ 
-        width: 31.25%; margin: -460px auto; color: #4c4c4c; font-size: 18px; font-weight: 400;
-    } */
-    /* 중앙에 오게하는것... */
-
     #cartPanel{
         position: fixed; top: 36px; right: 0;  max-width: 600px; width: 100%; height: 100%;
         background-color: #f3f3f3; z-index: 100; padding: 0 2.35%; box-sizing: border-box;
     }
-    /* 패널이 딸려 내려오지 않게 fixed로 고정
-    z-index를 사용하여 맨 위로 오게끔.. */
-
     #cartPanel > div{
         position: relative; 
     }
@@ -1335,7 +1225,6 @@ a{
     #cartPanel > div ul{
         max-height: 340px; overflow-y: scroll; padding-top: 50px;
     }
-    /* 스크롤은 이렇게 해야함.. */
 
     #cartPanel > div ul li{
         padding-bottom: 40px;
@@ -1380,7 +1269,6 @@ a{
     #cartPanel > div > dl dd:nth-of-type(3){
         margin-bottom: 70px;
     }
-    /* 원래는 200px인데 잘려서 줄였는데 맞나요..ㅜ */
     #cartPanel > div a:nth-of-type(1){
         display: block; max-width: 325px; margin: 0 auto 25px; padding: 10px 0;
         text-align: center; color: #4c4c4c;
@@ -1389,9 +1277,6 @@ a{
     #cartPanel > div a:nth-of-type(2){
         display: block; text-align: center; color: #4c4c4c;
     }
-
-    /* t순서대로 정렬 위해 먼저 안보이게 숨김 */
-
     #searchPanel{
         position: fixed; width: 100%; left: 0; top: 35px; font-weight: 300;
         background-color: #f3f3f3; padding: 70px 0; z-index: 1000;
@@ -1413,4 +1298,3 @@ a{
     }
 
 }
-/* desktop 영역 */
