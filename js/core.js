@@ -1,8 +1,8 @@
 $(document).ready(function(){
     rollingBanner();
-    slider('.textureSlider',false,1,1,0);
-    slider('.tickerSlider',false,4,1,480);
-    slider('.athensImgSlider',false,1,1,0);
+    slider('.textureSlider',1,0);
+    slider('.tickerSlider',4,480);
+    slider('.athensImgSlider',1,0);
     imgSwap(".tickerSlider li img");
     imgSwap(".listContainer li img");
     panelControl(".sideContainer input");
@@ -29,11 +29,11 @@ function rollingBanner(){
         }
     }, 2000); 
 }
-function slider(target,pagerValue,maxVal,minVal,slideW){
+function slider(target,maxVal,slideW){
     $(target).bxSlider({
-        pager: pagerValue,
+        pager: false,
         maxSlides: maxVal,
-        minSlides: minVal,
+        minSlides: 1,
         slideWidth: slideW,
         touchEnabled: false
     });
@@ -44,11 +44,11 @@ function imgSwap(target){
     var currentNumb = '';
 
     $(target).hover(function(){
-        currentNumb = $(this).attr("data-imgnumb");
+        currentNumb = $(this).attr("data-imgnumb"); 
         currentImg = imgPath + currentNumb + "Hover.png";
         $(this).attr('src',currentImg);
     });
-    $(target).mouseleave(function(){
+    $(target).mouseleave(function(){ 
         currentImg = imgPath + currentNumb + ".png";
         $(this).attr('src',currentImg);
     });
